@@ -136,11 +136,25 @@ def texto_do_slide(textos, total):
     return limpos
 
 
+# Endereço do próprio site público (a capa das apresentações aponta para ele).
+SITE_PUBLICO = "https://marcelofernandesgarcia-dev.github.io/transferegov-contes-osc/"
+
+
 def link_permitido(endereco):
-    """Só https e domínio gov.br, como na landing de origem."""
+    """Só https em domínio gov.br, como na landing de origem, ou o endereço do próprio site."""
     u = urlparse(endereco or "")
     host = (u.hostname or "").lower()
-    return u.scheme == "https" and (host == "gov.br" or host.endswith(".gov.br"))
+    if u.scheme != "https":
+        return False
+    if host == "gov.br" or host.endswith(".gov.br"):
+        return True
+    return endereco.startswith(SITE_PUBLICO)
+
+
+def juntar_quebra(texto):
+    """Texto de link quebrado em linhas no slide: sem espaços (endereço) junta direto; senão, com espaço."""
+    partes = [p.strip() for p in texto.replace("\r", "\n").split("\n") if p.strip()]
+    return ("" if all(" " not in p for p in partes) else " ").join(partes)
 
 
 def linha_html(linha, links):
@@ -160,8 +174,20 @@ def links_do_slide(s, onde):
         if not link_permitido(l.get("endereco")):
             raise ErroMontagem(f"{onde}, slide {s['numero']}: link fora de https/gov.br: {l.get('endereco')!r}")
         if l.get("texto"):
-            links[l["texto"].strip()] = l["endereco"]
+            links[juntar_quebra(l["texto"])] = l["endereco"]
     return links
+
+
+def unir_textos_de_link(textos, links_brutos):
+    """Junta numa linha só o texto de um link que o slide quebrou em várias linhas."""
+    saida = []
+    for t in textos:
+        for l in links_brutos:
+            bruto = (l.get("texto") or "").replace("\r", "\n").strip()
+            if "\n" in bruto and bruto in t:
+                t = t.replace(bruto, juntar_quebra(bruto))
+        saida.append(t)
+    return saida
 
 
 def pagina_slides(chave, slides):
@@ -174,6 +200,7 @@ def pagina_slides(chave, slides):
         if s["numero"] == 1 and len(textos) > 1:
             titulo = f"{textos[0]}: {textos[1]}"
         links = links_do_slide(s, chave)
+        textos = unir_textos_de_link(textos, s.get("links") or [])
         paragrafos = "\n".join(
             "<p>" + "<br>".join(linha_html(l, links) for l in t.split("\n") if l.strip()) + "</p>" for t in textos)
         usados = sum(paragrafos.count(f'href="{html.escape(e, quote=True)}"') > 0 for e in links.values())

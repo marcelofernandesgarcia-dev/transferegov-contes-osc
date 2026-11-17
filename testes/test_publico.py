@@ -81,6 +81,15 @@ class TestLinksDosSlides(unittest.TestCase):
         self.assertFalse(link_permitido("https://gov.br.exemplo.com/x"))
         self.assertFalse(link_permitido("javascript:alert(1)"))
         self.assertFalse(link_permitido(None))
+        self.assertTrue(link_permitido("https://marcelofernandesgarcia-dev.github.io/transferegov-contes-osc/"))
+        self.assertFalse(link_permitido("https://marcelofernandesgarcia-dev.github.io/outro-repo/"))
+
+    def test_link_quebrado_em_linhas_vira_uma_linha(self):
+        from montar_publico import juntar_quebra, unir_textos_de_link
+        self.assertEqual(juntar_quebra("site.github.io\r/repo/"), "site.github.io/repo/")
+        self.assertEqual(juntar_quebra("Manual\nMROSC completo"), "Manual MROSC completo")
+        self.assertEqual(unir_textos_de_link(["A:\nsite.io\n/repo/"], [{"texto": "site.io\r/repo/"}]),
+                         ["A:\nsite.io/repo/"])
 
     def test_link_fora_da_regra_para_a_montagem(self):
         from montar_publico import ErroMontagem, links_do_slide
@@ -198,6 +207,12 @@ class TestSite(unittest.TestCase):
             ultimo = texto[texto.index(f'id="slide-{n}"'):]
             self.assertGreaterEqual(ultimo.count('target="_blank" rel="noopener"'), 8, pagina)
             self.assertIn("<details class=\"texto-slide\" open>", ultimo)
+
+    def test_capa_com_link_do_site(self):
+        for pagina in ["slides-palestra.html", "slides-painel.html"]:
+            texto = (DOCS / pagina).read_text(encoding="utf-8")
+            capa = texto[texto.index('id="slide-1"'):texto.index('id="slide-2"')]
+            self.assertIn('href="https://marcelofernandesgarcia-dev.github.io/transferegov-contes-osc/" target="_blank" rel="noopener"', capa, pagina)
 
     def test_secao_acessos_necessarios(self):
         for pagina in ["index.html", "palestra-1-captacao.html", "palestra-2-desafios.html"]:
