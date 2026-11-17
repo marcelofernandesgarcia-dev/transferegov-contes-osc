@@ -1,0 +1,10 @@
+Fonte hospedada na pasta do projeto (sem Google Fonts nem outro serviço externo; funciona sem internet).
+
+- Raleway: subconjunto latino, fonte variável (pesos 100 a 900), arquivo raleway-latin-wght-normal.woff2.
+- Por que Raleway: o Design System gov.br define a família base "Rawline, Raleway, sans-serif". A Rawline não vem no pacote
+  do DS e a licença de distribuição não foi localizada; a Raleway é a segunda da lista e tem licença livre.
+- Aptos (fonte da identidade DTPAR) é da Microsoft: entra na pilha e é usada só se estiver instalada; nunca é distribuída.
+- Licença: SIL Open Font License 1.1. Texto completo em LICENCA-Raleway-OFL.txt.
+- Origem: pacote npm @fontsource-variable/raleway 5.3.0, obtido em 07/11/2026.
+  SHA-256 do .tgz: E8B80BF103BDDE987607F1EA8EDCECFF6AA46B5C941C4D3743A357C2C5235FA3
+- Tipografia: Raleway usa algarismos antigos por padrão; o CSS aplica font-variant-numeric: lining-nums. Corpo em peso 500.

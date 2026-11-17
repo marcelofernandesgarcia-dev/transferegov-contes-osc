@@ -1,0 +1,27 @@
+/* Ajustes da versão pública. Só tokens (var), nenhum valor literal de cor ou medida. */
+
+/* Aviso do topo: não é serviço oficial */
+.aviso-publico { background: var(--cor-alerta-fundo); border-bottom: var(--surface-width-lg) solid var(--cor-alerta-marca); color: var(--cor-texto); }
+.aviso-publico p { margin: 0; padding-block: var(--spacing-scale-base); font-size: var(--texto-piso); font-weight: var(--font-weight-bold); }
+
+/* Selo visível de conteúdo produzido com IA (texto, não só cor) */
+.selo-ia { display: inline-block; margin-bottom: var(--spacing-scale-base); padding: var(--spacing-scale-half) var(--spacing-scale-base); background: var(--cor-alerta-fundo); border-left: var(--surface-width-lg) solid var(--cor-alerta-marca); color: var(--cor-alerta-sobre); font-size: var(--texto-piso); font-weight: var(--font-weight-bold); }
+.materiais .selo-ia { display: table; }
+.aviso-ia .selo-ia { margin: 0 var(--spacing-scale-base) 0 0; }
+
+/* Visualizador de slides */
+.visualizador { padding-block: var(--spacing-scale-4x); }
+.visualizador h1 { font-size: var(--texto-h2); color: var(--cor-titulo); }
+.lista-slides { list-style: none; margin: 0; padding: 0; }
+.lista-slides .slide { margin-bottom: var(--spacing-scale-4x); }
+.lista-slides figure { margin: 0; }
+.lista-slides img { display: block; width: 100%; height: auto; border: var(--surface-width-md) solid var(--cor-borda-campo); background: var(--cor-fundo); }
+.contador-slide { margin-top: var(--spacing-scale-base); font-size: var(--texto-piso); color: var(--cor-texto-suave); }
+.texto-slide { margin-top: var(--spacing-scale-2x); max-width: var(--largura-leitura); }
+.texto-slide summary { cursor: pointer; min-height: var(--tamanho-alvo); display: flex; align-items: center; color: var(--cor-interativo); font-weight: var(--font-weight-bold); }
+.controles-slides { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--spacing-scale-2x); margin-block: var(--spacing-scale-2x); }
+.controles-slides[hidden] { display: none; }
+.posicao-slide { margin: 0; font-weight: var(--font-weight-bold); }
+.controles-slides [aria-disabled="true"] { opacity: 0.45; cursor: not-allowed; }
+.apresentacao.ativa .slide { margin-bottom: 0; }
+.apresentacao.ativa .contador-slide { display: none; }

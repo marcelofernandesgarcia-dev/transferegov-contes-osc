@@ -1,0 +1,25 @@
+# Instruções locais (citam cofre e caminhos locais): não vão ao repositório público
+CLAUDE.md
+.claude/
+
+# Renderização intermediária dos slides (o site usa a cópia em docs/slides)
+gerado/
+
+# Gerados e de sistema
+__pycache__/
+*.pyc
+node_modules/
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+
+# Segredos (nunca versionar)
+.env
+.env.*
+*.pem
+*.key
+
+# Nunca públicos
+*.pptx
+*.potx

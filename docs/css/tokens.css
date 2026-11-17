@@ -1,0 +1,97 @@
+/* tokens.css — variáveis da landing "OSCs e Transferegov.br", sobre os tokens do Design System gov.br.
+ *
+ * Ordem de carregamento prevista: vendor/govbr-ds/tokens-ds.min.css, componentes do DS, este arquivo, css/estilo.css.
+ * Regra: só este arquivo tem valor literal; o restante do CSS usa var(--…). Cada valor traz a origem.
+ * DS: @govbr-ds/core 3.7.0 (vendor/govbr-ds/VERSAO.md). Identidade: template de apresentação Transferegov 2026,
+ * valores medidos registrados na skill entrega-profissional-dtpar (references/identidade-dtpar.md).
+ * Contraste: calculado pela fórmula WCAG 2.1 (design/CONTRASTE.md).
+ */
+
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/raleway-latin-wght-normal.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Identidade DTPAR (template Transferegov 2026). Marca = títulos, traços e gráficos; nunca link ou botão. */
+  --cor-marca-titulo: #003366;        /* 12,61:1 sobre branco; 11,47:1 sobre #edf5ff */
+  --cor-marca-amarelo: #ffc000;       /* traço sob títulos: decorativo (1,64:1), nunca em texto */
+  --cor-marca-linha: #dceaf7;         /* linhas finas e borda de painéis; decorativa */
+  --cor-grafico-azul: #0074cc;        /* azul do motivo: só em diagramas (4,81:1 sobre branco) */
+  --font-family-base: Aptos, Rawline, Raleway, sans-serif; /* Aptos (Microsoft) só se instalada; Raleway hospedada (OFL) */
+
+  /* Cores: aliases do DS (valor) e contraste sobre o fundo indicado */
+  --cor-fundo: var(--pure-0);                         /* #fff */
+  --cor-fundo-suave: var(--gray-2);                   /* #f8f8f8: só sem elemento focável (foco dá 2,97:1) */
+  --cor-fundo-destaque: var(--blue-warm-vivid-5);     /* #edf5ff: só sem elemento focável (foco dá 2,87:1) */
+  --cor-texto: var(--color);                          /* #333: 12,63:1 branco; 11,50:1 #edf5ff */
+  --cor-texto-suave: var(--gray-60);                  /* #636363: 6,01:1 branco; 5,47:1 #edf5ff */
+  --cor-titulo: var(--cor-marca-titulo);
+  --cor-interativo: var(--interactive);               /* #1351b4: 7,33:1 branco; 6,67:1 #edf5ff */
+  --cor-interativo-hover: var(--blue-warm-vivid-80);  /* #0c326f: branco sobre ele 12,34:1 */
+  --cor-sobre-interativo: var(--pure-0);              /* branco sobre #1351b4: 7,33:1 */
+  --cor-borda: var(--gray-20);                        /* #ccc: só divisão decorativa */
+  --cor-borda-campo: var(--gray-40);                  /* #888: 3,54:1 (borda de controle ≥ 3:1) */
+  --cor-foco: var(--focus-color);                     /* #c2850c: 3,16:1 sobre branco */
+
+  /* Estados (DS). Sempre com ícone e texto; a cor nunca é o único sinal. */
+  --cor-ok-texto: var(--success);                     /* #168821: 4,59:1 branco */
+  --cor-ok-fundo: var(--green-cool-vivid-5);          /* #e3f5e1: texto #333 a 11,08:1 */
+  --cor-erro-texto: var(--danger);                    /* #e52207: 4,60:1 branco */
+  --cor-erro-fundo: var(--red-vivid-5);               /* #fff3f2: texto #333 a 11,64:1 */
+  --cor-alerta-fundo: var(--yellow-vivid-5);          /* #fff5c2: texto #333 a 11,49:1 */
+  --cor-alerta-marca: var(--warning);                 /* #ffcd07: texto #071d41 a 11,09:1 */
+  --cor-alerta-sobre: var(--blue-warm-vivid-90);      /* #071d41 */
+
+  /* Tipografia. Corpo 16 px, subindo até 18 px em telas largas (projeção em sala). Nada abaixo de 14 px. */
+  --texto-piso: 0.875rem;                                  /* 14 px */
+  --texto-corpo: clamp(1rem, 0.9rem + 0.25vw, 1.125rem);   /* 16 → 18 px */
+  --texto-lead: clamp(1.125rem, 1rem + 0.4vw, 1.375rem);   /* 18 → 22 px */
+  --texto-h3: clamp(1.2rem, 1.1rem + 0.4vw, 1.5rem);
+  --texto-h2: clamp(1.5rem, 1.2rem + 1vw, 2.25rem);
+  --titulo-hero: clamp(1.75rem, 1.2rem + 3vw, 3.25rem);
+  --texto-numero: clamp(2rem, 1.5rem + 2vw, 3rem);   /* 32 → 48 px: número em destaque, legível na projeção */
+  --texto-kicker: var(--texto-piso);
+  --espacamento-kicker: 0.08em;
+  --peso-corpo: 500;               /* Raleway 400 é fina demais: corpo em 500 */
+  --peso-titulo: 800;              /* Aptos ExtraBold / Raleway 800 */
+  --altura-linha: 1.6;
+
+  /* Medidas */
+  --largura-max: 75rem;            /* 1200 px */
+  --largura-leitura: 46rem;        /* ~ 70 caracteres por linha */
+  --tamanho-logo: 2.5rem;          /* altura do logotipo (456 × 152, exibido até 120 × 40) */
+  --tamanho-traco-acento: 3.5rem;  /* 56 px */
+  --espessura-traco-acento: 4px;
+  --largura-motivo-canto: 6.5rem;  /* motivo-canto.png 210 × 485 */
+  --proporcao-motivo-canto: 210 / 485;
+  --largura-motivo-capa: 9.5rem;   /* motivo-capa.png 299 × 538; só em ≥ 1100 px */
+  --proporcao-motivo-capa: 299 / 538;
+  --largura-marca-dagua: 22rem;    /* marca-dagua.png 537 × 720 */
+  --proporcao-marca-dagua: 537 / 720;
+  --opacidade-marca-dagua: 0.35;   /* marca d'água clara, como no template; decorativa, atrás do texto */
+  --tamanho-alvo: 2.75rem;         /* 44 px: alvo de toque mínimo */
+  --tamanho-icone: 1.25rem;
+  --traco-icone: 2;
+  --espessura-foco: 4px;
+  --transicao-curta: 0.15s ease-out;
+
+  /* Diagramas SVG (unidades do viewBox; tamanho renderizado conferido ≥ 14 px no navegador) */
+  --svg-texto: 17px;
+  --svg-texto-numero: 22px;
+  --svg-traco: 3;
+  --svg-traco-destaque: 6;
+
+  /* Camadas */
+  --camada-cabecalho: 900;
+  --camada-sumario: 950;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transicao-curta: 0s;
+  }
+}

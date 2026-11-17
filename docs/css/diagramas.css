@@ -1,0 +1,39 @@
+/* diagramas.css — aparência dos SVG gerados por scripts/gerar_svgs.py. Só variáveis de css/tokens.css. */
+
+.diagrama {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: var(--font-family-base);
+  font-variant-numeric: lining-nums;
+}
+
+/* Ciclo */
+.diagrama-ciclo { max-width: 48.75rem; margin-inline: auto; }
+.diagrama-ciclo .arco { fill: none; stroke: var(--cor-grafico-azul); stroke-width: var(--svg-traco); }
+.diagrama-ciclo .arco-destaque { fill: none; stroke: var(--cor-titulo); stroke-width: var(--svg-traco-destaque); }
+.diagrama-ciclo .arco-ponta { fill: var(--cor-grafico-azul); }
+.diagrama-ciclo .arco-destaque-ponta { fill: var(--cor-titulo); }
+.diagrama-ciclo .no { fill: var(--cor-fundo); stroke: var(--cor-titulo); stroke-width: var(--svg-traco); }
+.diagrama-ciclo .no-inicio { fill: var(--cor-titulo); }
+.diagrama-ciclo .no-numero { fill: var(--cor-titulo); font-size: var(--svg-texto-numero); font-weight: var(--peso-titulo); }
+.diagrama-ciclo .no-numero-inicio { fill: var(--cor-fundo); }
+.diagrama-ciclo .rotulo { fill: var(--cor-texto); font-size: var(--svg-texto); font-weight: var(--font-weight-semi-bold); }
+
+/* Árvore de decisão */
+.diagrama-arvore { max-width: 48.75rem; margin-inline: auto; }
+.diagrama-arvore .pergunta { fill: var(--cor-fundo); stroke: var(--cor-titulo); stroke-width: var(--svg-traco); }
+.diagrama-arvore .pergunta-texto { fill: var(--cor-titulo); font-size: var(--svg-texto); font-weight: var(--font-weight-bold); }
+.diagrama-arvore .resultado { fill: var(--cor-titulo); stroke: none; }
+.diagrama-arvore .resultado-texto { fill: var(--cor-fundo); font-size: var(--svg-texto); font-weight: var(--font-weight-bold); }
+.diagrama-arvore .seta { fill: none; stroke: var(--cor-grafico-azul); stroke-width: var(--svg-traco); }
+.diagrama-arvore .seta-ponta { fill: var(--cor-grafico-azul); }
+.diagrama-arvore .seta-rotulo { fill: var(--cor-texto); font-size: var(--svg-texto); font-weight: var(--font-weight-semi-bold); }
+
+/* Abaixo de 704 px o SVG sai e entra a lista equivalente (sem passar duas vezes pelo leitor de tela).
+   Medido: a 641 px o texto do SVG renderiza com 13,3 px; o piso de 14 px exige SVG com ≥ 643 px de largura. */
+.diagrama-lista { display: none; }
+@media (max-width: 44rem) {
+  .diagrama { display: none; }
+  .diagrama-lista { display: block; }
+}

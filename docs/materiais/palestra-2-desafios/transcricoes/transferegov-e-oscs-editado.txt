@@ -1,0 +1,158 @@
+Transcrição automática (faster-whisper medium, local) de transferegov-e-oscs.mp4, versão editada em 08/11/2026: trechos com erro cortados e cartões de correção inseridos (marcados como [Correção da revisão]). Lista das edições em materiais/edicoes-video.json. NÃO REVISADA: conferir com o áudio.
+
+Bem-vindos a este guia explicativo.
+Hoje, a gente vai entrar de cabeça no ecossistema do MROSC e do Transferegov.br.
+Assumindo aqui a postura de um consultor técnico rigoroso,
+o nosso objetivo é transformar aquele monte de manual, legislações e exigências
+em um mapa estratégico real e aplicável para as organizações da sociedade civil
+captarem recursos federais de verdade.
+Então, vamos direto ao ponto.
+Nossa masterclass técnica hoje passa pelo panorama do MROSC,
+as exigências de acesso, como estruturar propostas competitivas,
+a execução financeira e, para fechar, riscos e prestação de contas.
+Bora lá?
+Panorama MROSC e Transferegov.br.
+Vamos entender esse ecossistema.
+8.679.
+Esse número gigante representa a quantidade de termos de colaboração e fomento
+assinados entre 2016 e 2024.
+É um volume massivo de dinheiro e oportunidade, pessoal.
+As OSC têm um papel absolutamente vital na implementação de políticas públicas,
+chegando onde o Estado muitas vezes não chega.
+Mas, para jogar esse jogo de igual para igual,
+dominar as regras do manual é obrigatório.
+É a Lei 13.019 de 2014, o famoso MROSC.
+Ele consolidou uma parceria moderna entre o Estado e a sociedade civil.
+Sabe qual foi a grande virada de chave aqui?
+O MROSC criou um regime jurídico mais seguro e ético,
+onde o foco saiu daquela burocracia absurda focada em papelada
+e passou para o controle de resultados.
+O que importa agora é o impacto real gerado para quem mais precisa.
+E onde toda essa gestão acontece na prática?
+No Transferegov.br.
+Gente, não tem como fugir.
+Esse é o coração digital não negociável de todo o ecossistema.
+Desde o lançamento do edital, passando pela assinatura,
+até cada movimentação financeira e o último centavo da prestação de contas.
+Tudo tem que estar registrado lá.
+É literalmente o grande motor de transparência do governo federal.
+Exigências para acesso a recursos.
+Aqui a gente entra nas regras rígidas do jogo.
+O ponto crucial aqui é,
+de nada adianta ter uma proposta técnica perfeitamente redigida
+se a estrutura institucional da organização apresentar falhas.
+A conformidade vem em primeiro lugar.
+Esse checklist visual é o que as equipes administrativas
+precisam verificar antes mesmo de olhar para um edital.
+A gente está falando de participar com o CNPJ matriz ou filial,
+comprovar o tempo mínimo de existência,
+garantir através de declarações formais
+que os dirigentes não têm proibições legais
+e, claro, provar o endereço direitinho.
+É o básico que garante a qualificação.
+Somado a isso,
+vem a parte pesada da regularidade fiscal e trabalhista.
+Tem que apresentar a certidão negativa trabalhista,
+o CNDT, o certificado do FGTS
+e a certidão de tributos federais e dívida ativa.
+Um alerta gigante para quem está na gestão.
+Uma única certidão vencida no sistema
+vira uma barreira imediata para a assinatura da parceria.
+O compliance e a gestão de documentos
+precisam ser muito, mas muito proativos.
+Parte 3. Elaboração de propostas competitivas.
+Hora de construir o nosso caso de sucesso.
+Isso ilustra brilhantemente um dos maiores desafios técnicos.
+A classificação correta das despesas no plano de trabalho.
+Costos operacionais são exclusivamente aqueles ligados de forma direta
+às ações que entregam os resultados do projeto.
+Já os custos administrativos são os indiretos,
+necessários para manter a parceria rodando,
+tipo aluguel, contador, internet.
+Dá para pagar a equipe de trabalho?
+Dá sim, inclusive dirigentes,
+mas sempre proporcional ao tento dedicado ao projeto
+e respeitando o teto de mercado.
+Outro detalhe estratégico de planejamento é a contrapartida.
+O manual traz uma distinção muito nítida.
+A contrapartida obrigatória só pode ser exigida pela administração
+em parcerias que superem 1 milhão de reais
+e tem que ser em bens ou serviços com valor certinho.
+Agora, a contrapartida voluntária
+é uma oferta da própria organização.
+E prestem atenção nesse detalhe.
+Ela nunca pode ser exigida para celebrar a parceria,
+nem usada como critério para dar mais pontos na hora de julgar as propostas.
+Agora, uma informação supervaliosa que muita gente deixa passar na mesa.
+Elaborar uma proposta complexa custa dinheiro, certo?
+Sabia que a legislação permite que as OSC selecionadas
+usem recursos da própria parceria de forma retroativa
+para pagar esses custos de elaboração?
+Pois é, o limite é de até 5% do valor global,
+respeitando um teto máximo de 50 mil reais.
+É um mecanismo excelente de sustentabilidade institucional.
+Passar no edital é ótimo, claro,
+mas a maturidade da organização é testada mesmo na execução.
+Assim que sai o resultado final,
+começa uma corrida contra o tempo, com prazos muito rígidos.
+A OSC tem uma janela super apertada de apenas 15 dias corridos
+para apresentar o plano de trabalho
+e comprovar todos aqueles requisitos legais e fiscais.
+O governo só dá 15 dias extras se encontrar erros puramente formais
+ou alguma certidão que acabou de expirar.
+Então, a antecipação não é luxo, é sobrevivência.
+Entrando na gestão financeira do dia a dia, as amarras são fortes.
+A movimentação tem que acontecer via ordem de pagamento de parceria, a OPP,
+lá dentro do Transferegov.br.
+Transferir dinheiro da conta do projeto
+para a conta privada da instituição?
+Quase nunca.
+e só passa com justificativas excepcionais,
+tipo um ressarcimento de atraso e pagamentos em espécie.
+Existe um teto restritivo de R$ 5 mil por beneficiário.
+Vamos seguir em frente e ver como isso se desenrola
+no sistema de penalidades do governo.
+O financiamento pode parar no meio se houver quebra de regras.
+A retenção das parcelas pelo governo acontece
+se eles acharem irregularidades no uso do dinheiro repassado antes,
+se houver desvio da finalidade do projeto
+ou se a instituição simplesmente ignorar
+nas orientações de correção dos órgãos de controle.
+Transparência é o que mantém o dinheiro fluindo.
+Riscos e prestação de contas.
+Como funcionam os mecanismos de defesa?
+Mas e se o radar do monitoramento público
+apita algum problema?
+Calma.
+A constituição garante o direito de defesa.
+Se houver indícios de inexecução parcial,
+a organização não é punida de cara.
+Ela recebe uma notificação oficial
+e tem exatos 30 dias para responder de três formas.
+Primeiro, agir rápido e sanar a irregularidade.
+Segundo, cumprir a obrigação que estava pendente.
+Ou terceiro, protocolar uma justificativa formal
+provando que era tecnicamente impossível
+corrigir a situação naquele momento.
+O ideal, claro, é não deixar chegar nesse ponto.
+[Correção da revisão] As situações a seguir são sinais que a administração pública observa no monitoramento e avaliação da parceria. A visita técnica in loco não é auditoria nem fiscalização. Fonte: Manual MROSC, itens 8.1 e 8.6.
+Por exemplo, o cronograma físico
+no bater com o gasto financeiro,
+deixar dinheiro parado na conta por 365 dias sem uso,
+receber notas baixas nas pesquisas de satisfação dos beneficiários,
+ou, claro, fiscais encontrarem problemas sérios
+durante visitas técnicas no local.
+O monitoramento interno da OSC
+tem que caçar essas falhas antes da administração pública.
+E a gente encerra nossa análise com um questionamento essencial.
+A governança interna da organização está, de fato, madura
+e preparada para o nível absurdo de rastreabilidade
+e transparência digital que o Transferegov.br exige?
+A vontade de causar impacto social
+é o combustível que nos move, com certeza.
+Mas, no fim do dia, estruturar as bases institucionais,
+dominar as regras do MROSC
+e aplicar processos rigorosos de compliance
+é o que verdadeiramente transforma boas intenções
+em parcerias reais, financiadas e de impacto duradouro.
+Pensem nisso e um excelente planejamento a todos nós.

@@ -1,0 +1,178 @@
+Transcrição automática (faster-whisper medium, local) de mrosc-na-pratica-captacao.mp4, versão editada em 08/11/2026: trechos com erro cortados e cartões de correção inseridos (marcados como [Correção da revisão]). Lista das edições em materiais/edicoes-video.json. NÃO REVISADA: conferir com o áudio.
+
+Bora lá mergulhar nesse tema.
+Esta é uma análise prática do material oficial
+sobre um desafio que é a base para o impacto social no Brasil.
+A captação e gestão de recursos federais.
+E tudo isso roda sob o guarda-chuva do MROSC,
+o marco regulatório das organizações da sociedade civil.
+Sabe aquela burocracia que sempre parecia um muro de concreto intransponível?
+A ideia da nossa explicação de hoje
+é justamente decifrar essas fontes
+e transformar esse processo num caminho bem claro.
+Nosso foco é puramente MROSC na prática.
+Um passo a passo sobre como captar recursos federais no Transferegov.br,
+enviar propostas redondinhas,
+gerenciar a grana e, o mais importante,
+comprovar o impacto real que foi gerado na ponta.
+E para isso, a gente tem um roteiro bem direto com seis etapas.
+Ponto 1, o MROSC e a plataforma Transferegov.
+2, Propostas e chamamento público.
+3, Construindo o plano de trabalho.
+4, Execução e despesas elegíveis.
+5, Acompanhamento e avaliação.
+E, por fim, o ponto 6, a prestação de contas final.
+Começando pelo começo.
+Ponto 1, o MROSC e a plataforma Transferegov.
+O alicerce de toda essa mudança,
+que veio com a Lei 13.019,
+traz um conceito super amplo do que é uma organização da sociedade civil,
+a famosa OSC.
+Diferente daquelas titulações antigas,
+que exigiam certificações mega complexas,
+o MROSC hoje abraça entidades privadas sem fins lucrativos,
+cooperativas sociais e até entidades religiosas.
+O requisito principal é simples,
+estar desenvolvendo atividades de interesse público e social.
+Basicamente, isso democratiza o acesso
+e reconhece as entidades que estão ralando de verdade no dia a dia.
+[Correção da revisão] O Manual MROSC organiza a parceria em seis etapas: planejamento, seleção, celebração, execução, monitoramento e avaliação, e prestação de contas. É o ciclo apresentado nesta página. Fonte: Manual MROSC, Quadro 1.
+Avançando para o ponto 2,
+propostas e chamamento público.
+E é aqui que a mágica digital acontece.
+Todo o processo, desde a busca pelo edital
+até o envio da última notinha,
+rola no Transferegov.br.
+É o verdadeiro hub digital da coisa toda.
+Pode dar adeus para aquela era
+das montanhas de papel e das viagens sem fim para Brasília.
+Para entrar no jogo, os primeiros passos são críticos.
+Depois de achar o edital lá no Transferegov,
+é hora de enviar a proposta inicial.
+Mas, ó, um detalhe importantíssimo.
+Não dá para mandar uma ideia solta,
+jogada ao vento.
+Esse documento exige um diagnóstico claro.
+Qual é o problema público exato?
+Quem é a população afetada?
+Como isso vai ser viável?
+Uma intervenção forte nasce impreterivelmente
+de um diagnóstico impecável da realidade.
+Entrando agora no ponto 3.
+Construindo o plano de trabalho.
+O ponto crucial aqui é entender exatamente
+essa diferença que muita gente confunde.
+A proposta é só um rascunho,
+um esboço feito lá na fase do edital.
+Já o plano de trabalho
+é a planta baixa definitiva do projeto.
+É um documento vinculativo mesmo.
+É ele que vai especificar o que vai ser feito,
+prever cada ação,
+cravar as metas com os indicadores
+e estimar na ponta do lápis todas as despesas.
+Resumindo, é o mapa que vai guiar
+e cobrar a execução do primeiro ao último dia.
+E como é que esse documento ganha vida?
+Através do que o Marco chama de diálogo técnico.
+A lógica é genial.
+De um lado, a OSC conhece a dor local
+melhor do que ninguém.
+Do outro, o poder público domina as diretrizes federais.
+Então, antes de assinar qualquer coisa,
+todo mundo senta junto,
+geralmente em reuniões virtuais mesmo,
+para ajustar e alinhar as expectativas.
+É uma colaboração técnica purinha
+para garantir que a proposta da organização
+case perfeitamente com a política pública.
+Execução e despesas elegíveis.
+Pessoal, essa parte aqui revela
+um dos maiores avanços do MROSC.
+Antigamente, pagar a estrutura da própria instituição
+com recurso público era o maior tabu.
+Hoje, a regra mudou.
+Os fundos podem, sim,
+cobrir custos administrativos indiretos,
+tipo o rateio do aluguel,
+da internet, da contabilidade.
+Tem mais.
+A remuneração da equipe de trabalho do projeto,
+incluindo o pessoal próprio da organização,
+com todos os encargos, está liberada,
+desde que prevista no plano.
+E um detalhe que surpreende,
+a lei permite até o pagamento retroativo
+dos custos de elaboração da proposta.
+Isso mesmo, limitado a 5% do valor global,
+com um teto máximo de R$ 50 mil.
+Claro que a movimentação desse dinheiro
+não é bagunçada.
+Ela acontece de forma hipertransparente
+lá dentro do Transferegov.br,
+usando uma funcionalidade chamada OPP,
+a ordem de pagamento de parceria.
+Dinheiro vivo, em espécie, é raridade absoluta,
+restrito a um limite bem rígido
+de R$ 5 mil por beneficiário.
+A regra de ouro aqui é uma só.
+Absolutamente toda e qualquer despesa
+tem que estar perfeitamente amarrada
+no plano de trabalho aprovado.
+Acompanhamento e avaliação.
+Isso tudo levanta uma questão central,
+daquelas para a gente pensar com cuidado.
+Como é que o governo avalia, na prática,
+se a parceria está sendo um sucesso
+no meio da execução?
+A resposta é que o sucesso já não é medido
+só por quem apresenta as notas fiscais
+contábeis mais impecáveis.
+O jogo virou para uma verdadeira gestão
+por resultados.
+O alvo principal é o cumprimento do objeto.
+Para checar isso, o poder público
+faz visitas técnicas em loco
+para ver a ação acontecendo no mundo real
+e chega até a aplicar pesquisas
+de satisfação com o público beneficiado.
+E, obviamente, a transparência impera
+com a obrigação de expor os dados
+tanto na internet quanto fisicamente,
+lá na sede da organização.
+E, finalmente, ponto 6.
+Prestação de contas final.
+A reta final de todo esse processo
+gira em torno do relatório final
+de execução do objeto.
+E a lógica dos resultados
+continua firme e forte aqui.
+O documento exige provas irrefutáveis
+de que o serviço chegou em quem precisava.
+Estamos falando de anexar fotos,
+vídeos, listas de presença,
+tudo direto no sistema.
+E se a meta não for batida
+por algum motivo de força maior?
+Sem pânico, o relatório tem espaço
+para as justificativas formais.
+O fechamento de tudo isso é uma avaliação
+caprichada dos impactos econômicos e sociais
+que foram cravados naquela comunidade.
+Dominando esse ciclo todo,
+desde uma proposta certeira
+até um plano realista
+e a prestação de contas focada no resultado,
+as organizações transformam o MROSC
+numa ponte gigantesca.
+Quando essa tal burocracia é compreendida
+por transferiGov, ela simplesmente deixa
+de ser uma barreira e vira uma ferramenta poderosa.
+Fica aí a reflexão final pra gente.
+Com essas ferramentas de acesso
+totalmente dominadas,
+qual será o próximo grande impacto social
+a ser destravado pelo país afora?
+Essa foi a nossa análise de hoje
+sobre o financiamento oficial para as OSCs.
+Até a próxima exploração!

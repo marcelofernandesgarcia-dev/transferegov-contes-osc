@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Painel: Transferegov.br e as OSCs: Desafios, Exigências e Estratégias para Acesso a Recursos</title>
+<meta name="description" content="O que é exigido das OSCs nas parcerias federais, onde ocorrem os erros, os riscos de cada fase e as estratégias para ampliar o acesso a recursos, com base no Manual MROSC 2025.">
+<link rel="icon" type="image/png" href="assets/identidade/transferegov-logo.png">
+<link rel="stylesheet" href="vendor/govbr-ds/tokens-ds.min.css">
+<link rel="stylesheet" href="vendor/govbr-ds/button.min.css">
+<link rel="stylesheet" href="vendor/govbr-ds/checkbox.min.css">
+<link rel="stylesheet" href="vendor/govbr-ds/input.min.css">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/diagramas.css">
+<link rel="stylesheet" href="css/estilo.css">
+<link rel="stylesheet" href="css/publico.css">
+</head>
+<body>
+<!-- Página gerada por scripts/montar_paginas.py a partir de fonte/. Não editar à mão. -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-externo" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+  <symbol id="i-alerta" viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3zM12 10v4M12 17v.5"/></symbol>
+  <symbol id="i-impede" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M6 18 18 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></symbol>
+  <symbol id="i-documento" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v4h4M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-equipe" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.5c3 0 6 1.8 6 5.5"/></symbol>
+  <symbol id="i-calculo" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M8 7h8M8 12h2M14 12h2M8 16h2M14 16h2"/></symbol>
+</svg>
+
+<nav class="atalhos" aria-label="Atalhos de acessibilidade">
+  <a href="#conteudo">Ir para o conteúdo</a>
+  <a href="#sumario">Ir para o sumário</a>
+</nav>
+
+<div class="aviso-publico"><div class="envelope"><p>Página de apoio a uma palestra; não é serviço oficial do gov.br.</p></div></div>
+<header class="cabecalho">
+  <div class="envelope">
+    <p class="cabecalho-titulo"><a href="index.html">OSCs e parcerias federais</a></p>
+    <img src="assets/identidade/transferegov-logo.png" alt="Transferegov.br" width="120" height="40">
+  </div>
+</header>
+
+<nav class="nav-palestras" aria-label="Palestra e painel">
+  <div class="envelope">
+    <ul>
+      <li><a href="index.html"><span class="nav-titulo">Início</span></a></li>
+      <li><a href="palestra-1-captacao.html"><span class="nav-numero">Palestra 1</span> <span class="nav-titulo">Captação de Recursos Federais via Transferegov.br para o Terceiro Setor</span></a></li>
+      <li><a href="palestra-2-desafios.html" aria-current="page"><span class="nav-numero">Painel</span> <span class="nav-titulo">Transferegov.br e as OSCs: Desafios, Exigências e Estratégias para Acesso a Recursos</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sumario" id="sumario" aria-label="Sumário do painel" tabindex="-1">
+  <div class="envelope">
+    <ol>
+      <li><a href="#panorama">Panorama</a></li>
+      <li><a href="#ecossistema">Ecossistema</a></li>
+      <li><a href="#exigencias">Exigências</a></li>
+      <li><a href="#riscos-fases">Riscos por fase</a></li>
+      <li><a href="#execucao">Execução</a></li>
+      <li><a href="#monitoramento">Monitoramento</a></li>
+      <li><a href="#prestacao-contas">Prestação de contas</a></li>
+      <li><a href="#transparencia">Transparência</a></li>
+      <li><a href="#sancoes">Sanções</a></li>
+      <li><a href="#estrategias">Estratégias</a></li>
+      <li><a href="#checklists">Checklists</a></li>
+      <li><a href="#material-didatico">Material didático</a></li>
+    </ol>
+  </div>
+</nav>
+
+<main id="conteudo" tabindex="-1">
+
+<section class="hero" aria-labelledby="titulo-hero">
+  <div class="envelope">
+    <p class="kicker">Painel</p>
+    <h1 id="titulo-hero">Transferegov.br e as OSCs: Desafios, Exigências e Estratégias para Acesso a Recursos</h1>
+    <dl class="faixa-palestra">
+      <div><dt>Para quem</dt><dd>dirigentes, gestores, captadores de recursos, consultores e equipes administrativas de OSCs.</dd></div>
+      <div><dt>Pergunta-guia</dt><dd>o que é exigido, onde as OSCs erram e que estratégias ampliam o acesso a recursos?</dd></div>
+    </dl>
+    <div class="acoes">
+      <a class="br-button primary" href="#riscos-fases">Ver os riscos por fase</a>
+      <a class="br-button secondary" href="#checklists">Abrir os checklists</a>
+      <a class="br-button secondary" href="slides-painel.html">Acompanhar os slides do painel</a>
+    </div>
+    <p class="aviso">Material orientativo. Não substitui a Lei nº 13.019/2014, o Decreto nº 8.726/2016 nem o edital de cada chamamento.</p>
+  </div>
+</section>
+
+<section class="secao" id="panorama" aria-labelledby="h-panorama">
+  <div class="envelope">
+    <h2 id="h-panorama">Panorama: o MROSC e as parcerias com a União</h2>
+    <div class="leitura">
+      <p>O regime das parcerias com OSCs é o da Lei nº 13.019/2014, regulamentada no governo federal pelo Decreto nº 8.726/2016. Convênios, contratos de repasse, contratos de gestão e termos de parceria seguem outras normas, que não se aplicam aos termos de fomento, de colaboração e aos acordos de cooperação, nem de forma subsidiária. <small class="fonte">Fonte: Manual MROSC, itens 1 e 3.</small></p>
+      <p>Entre 2016 e 2024 foram assinados 8.679 termos de colaboração e de fomento com OSCs, segundo dados do Transferegov.br citados no Manual. <small class="fonte">Fonte: Manual MROSC, item 1.</small></p>
+      <p>Em agosto de 2025, a Portaria Interministerial 197 aprovou o <cite>Manual MROSC – Do Planejamento à Prestação de Contas</cite>, que padroniza orientações para gestores públicos e OSCs em todas as etapas da parceria. <small class="fonte">Fonte: notícia da AGU de 12/08/2025.</small></p>
+      <p>Conceitos de parceria, instrumentos e vias de acesso: <a href="index.html#parceria">página inicial</a> e <a href="palestra-1-captacao.html#instrumentos">palestra 1</a>.</p>
+    </div>
+    <form class="painel interativo fixacao" id="fx-panorama" data-correta="b" aria-labelledby="fx-panorama-titulo" hidden>
+      <h3 class="fixacao-titulo" id="fx-panorama-titulo">Pergunta de fixação</h3>
+      <fieldset>
+        <legend>As normas dos convênios se aplicam aos termos de fomento e de colaboração?</legend>
+        <label class="opcao"><input type="radio" name="fx-panorama" value="a"> Sim, sempre</label>
+        <label class="opcao"><input type="radio" name="fx-panorama" value="b"> Não, nem de forma subsidiária</label>
+        <label class="opcao"><input type="radio" name="fx-panorama" value="c"> Só quando a lei do MROSC não tratar do assunto</label>
+      </fieldset>
+      <div class="acoes-fixacao">
+        <button type="submit" class="br-button primary small">Conferir</button>
+        <button type="reset" class="br-button secondary small">Tentar de novo</button>
+      </div>
+      <div class="resultado" aria-live="polite"></div>
+      <div class="explicacoes" hidden>
+        <p data-opcao="a">Termos de fomento, de colaboração e acordos de cooperação seguem a Lei nº 13.019/2014 e o Decreto nº 8.726/2016.</p>
+        <p data-opcao="b">Convênios, contratos de repasse, contratos de gestão e termos de parceria seguem outras normas, que não se aplicam às parcerias do MROSC.</p>
+        <p data-opcao="c">As normas dos convênios não se aplicam nem de forma subsidiária.</p>
+      </div>
+      <p class="fonte-bloco">Fonte: Manual MROSC, itens 1 e 3.</p>
+    </form>
+  </div>
+</section>
+
+<section class="secao" id="ecossistema" aria-labelledby="h-ecossistema">
+  <div class="envelope">
+    <h2 id="h-ecossistema">O ecossistema Transferegov.br</h2>
+    <div class="tabela-rolagem" tabindex="0" role="region" aria-labelledby="cap-ecossistema">
+      <table>
+        <caption id="cap-ecossistema">Peças do ecossistema e o que significam para a OSC</caption>
+        <thead><tr><th scope="col">Peça</th><th scope="col">O que é para a OSC</th><th scope="col">Fonte (Manual MROSC)</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Transferegov.br</th><td>Plataforma obrigatória de processamento das parcerias federais, do chamamento à prestação de contas; gerida pelo MGI</td><td>Item 7.3</td></tr>
+          <tr><th scope="row">Conta específica da parceria</th><td>Isenta de tarifa, em instituição financeira pública, aberta pela administração pela plataforma. Os recursos são aplicados enquanto não usados; os rendimentos vão para o objeto, por apostilamento</td><td>Item 7.4</td></tr>
+          <tr><th scope="row">OBTV</th><td>Funcionalidade de pagamento na conta específica, com identificação do beneficiário final</td><td>Item 7.7.2.1 (no Manual: Ordem de Pagamento de Parceria, OPP)</td></tr>
+          <tr><th scope="row">Painel gerencial público, aba "Visão OSC"</th><td>Consulta pública aos termos firmados; pelo CNPJ, extrai os dados de transparência de emendas</td><td>Itens 7.1.1 e 7.1.4</td></tr>
+          <tr><th scope="row">SIOP</th><td>Onde o parlamentar indica a OSC beneficiária da emenda e a ordem de prioridade</td><td>Item 4.10.3</td></tr>
+          <tr><th scope="row">CAUC</th><td>Extrato que pode substituir a certidão federal e o CRF/FGTS</td><td>Item 6.3</td></tr>
+          <tr><th scope="row">Cepim e SIAFI</th><td>Registro de sanções (Cepim) e de inadimplência (SIAFI e Transferegov.br)</td><td>Itens 9.5.6 e 9.4.1.2</td></tr>
+          <tr><th scope="row">Mapa das OSC (Ipea)</th><td>Página pública da OSC, que pode servir de sítio e currículo institucional</td><td>Item 7.1.2</td></tr>
+          <tr><th scope="row">CidadãoGov.br</th><td>Aplicativo de controle social sobre transferências operadas no Transferegov.br; permite avaliar e denunciar pelo Fala.BR</td><td>Item 8.3</td></tr>
+          <tr><th scope="row">Central de Atendimento</th><td>0800 978 9008</td><td>Item 7.3</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <form class="painel interativo fixacao" id="fx-ecossistema" data-correta="a" aria-labelledby="fx-ecossistema-titulo" hidden>
+      <h3 class="fixacao-titulo" id="fx-ecossistema-titulo">Pergunta de fixação</h3>
+      <fieldset>
+        <legend>Onde o parlamentar indica a OSC beneficiária da emenda?</legend>
+        <label class="opcao"><input type="radio" name="fx-ecossistema" value="a"> No SIOP</label>
+        <label class="opcao"><input type="radio" name="fx-ecossistema" value="b"> No CAUC</label>
+        <label class="opcao"><input type="radio" name="fx-ecossistema" value="c"> No Cepim</label>
+      </fieldset>
+      <div class="acoes-fixacao">
+        <button type="submit" class="br-button primary small">Conferir</button>
+        <button type="reset" class="br-button secondary small">Tentar de novo</button>
+      </div>
+      <div class="resultado" aria-live="polite"></div>
+      <div class="explicacoes" hidden>
+        <p data-opcao="a">No SIOP o parlamentar indica a OSC beneficiária da emenda e a ordem de prioridade.</p>
+        <p data-opcao="b">O CAUC é o extrato que pode substituir a certidão federal e o CRF/FGTS.</p>
+        <p data-opcao="c">O Cepim registra sanções aplicadas às OSCs.</p>
+      </div>
+      <p class="fonte-bloco">Fonte: Manual MROSC, itens 4.10.3, 6.3 e 9.5.6.</p>
+    </form>
+  </div>
+</section>
+
+<section class="secao" id="exigencias" aria-labelledby="h-exigencias">
+  <div class="envelope">
+    <h2 id="h-exigencias">Exigências para participação</h2>
+    <p class="leitura">Os documentos de requisitos só são pedidos <strong>depois da seleção</strong>, à OSC selecionada, que tem <strong>15 dias</strong> para apresentar o plano de trabalho e comprovar os requisitos. Irregularidade material impede a celebração. <small class="fonte">Fonte: Manual MROSC, itens 6 e 6.10.</small></p>
+
+    <ul class="numeros" aria-label="Números-chave dos requisitos">
+      <li><span class="numero-valor">3 anos</span><span class="numero-legenda">de CNPJ, no mínimo, para celebrar parceria na esfera federal</span><small class="fonte">Manual MROSC, itens 6.1 a 6.8.</small></li>
+      <li><span class="numero-valor">1 ano</span><span class="numero-legenda">de experiência no objeto ou em natureza semelhante, somando as comprovações</span><small class="fonte">Manual MROSC, itens 6.1 a 6.8.</small></li>
+      <li><span class="numero-valor">15 dias</span><span class="numero-legenda">da convocação para apresentar o plano de trabalho e comprovar os requisitos</span><small class="fonte">Manual MROSC, item 6.</small></li>
+    </ul>
+    <h3>Requisitos e meios de comprovação (parcerias federais)</h3>
+    <div class="tabela-rolagem" tabindex="0" role="region" aria-labelledby="cap-requisitos">
+      <table>
+        <caption id="cap-requisitos">Requisitos para celebrar parceria federal e como comprovar</caption>
+        <thead><tr><th scope="col">Requisito</th><th scope="col">Exigência</th><th scope="col">Como comprovar</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Tempo de existência</th><td>Mínimo de 3 anos de CNPJ, situação cadastral ativa</td><td>Data de abertura e situação no cartão CNPJ</td></tr>
+          <tr><th scope="row">Objetivos estatutários</th><td>Promoção de atividades e finalidades de relevância pública e social</td><td>Estatuto social</td></tr>
+          <tr><th scope="row">Destino do patrimônio na dissolução</th><td>Transferência a pessoa jurídica de igual natureza que cumpra a Lei nº 13.019/2014, de preferência com o mesmo objeto</td><td>Estatuto social</td></tr>
+          <tr><th scope="row">Escrituração contábil</th><td>Conforme os princípios fundamentais de contabilidade e as Normas Brasileiras de Contabilidade</td><td>Estatuto, regimento interno ou declaração de contador</td></tr>
+          <tr><th scope="row">Regularidade fiscal, previdenciária e trabalhista</th><td>Regular, ou certidão positiva com efeito de negativa</td><td>Certidão de débitos federais e dívida ativa da União; CRF/FGTS; CNDT. As duas primeiras podem ser substituídas pelo extrato do CAUC</td></tr>
+          <tr><th scope="row">Experiência prévia</th><td>No objeto ou em natureza semelhante, somando ao menos 1 ano</td><td>Parcerias anteriores, relatórios, publicações, declarações, currículos da equipe, prêmios</td></tr>
+          <tr><th scope="row">Capacidade técnica e operacional</th><td>Para executar as ações e cumprir as metas, instalada ou a instalar com recursos da parceria</td><td>Declaração do representante legal que distinga o já instalado do que será contratado ou adquirido</td></tr>
+          <tr><th scope="row">Quadro de dirigentes</th><td>Sem as vedações da lei</td><td>Relação nominal atualizada, última ata de eleição registrada e declaração do representante legal</td></tr>
+          <tr><th scope="row">Endereço</th><td>Funcionamento no endereço declarado</td><td>Conta de consumo, contrato de locação ou outro documento válido</td></tr>
+          <tr><th scope="row">Atuação em rede (se houver)</th><td>Mínimo de 5 anos de CNPJ e capacidade de supervisionar a rede</td><td>Data de abertura do CNPJ; declarações, cartas, registros e relatórios de redes</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fonte-bloco">Fonte: Manual MROSC, itens 6.1 a 6.8 e Quadro 3.</p>
+
+    <details class="detalhe">
+      <summary>Detalhe para a equipe técnica: pontos que costumam gerar dúvida</summary>
+      <ul class="lista">
+        <li>Em estados e DF o tempo mínimo é de 2 anos; em municípios, 1 ano. Na esfera federal, 3 anos.</li>
+        <li>O estatuto vale assinado e registrado em cartório, acompanhado da última ata de eleição registrada. Organizações religiosas e cooperativas estão dispensadas das duas primeiras exigências estatutárias; a cooperativa pode apresentar certidão simplificada da junta comercial.</li>
+        <li>Pode celebrar parceria a OSC inscrita no CNPJ como matriz ou como filial.</li>
+        <li>Certidão vencida não precisa ser reapresentada se estiver disponível eletronicamente.</li>
+        <li>A administração deve pedir só os documentos necessários para avaliar a capacidade da OSC para aquele objeto.</li>
+        <li>Os dirigentes declaram, entre outros pontos, que não há no quadro membro de Poder, do Ministério Público ou dirigente de órgão ou entidade da administração pública federal, nem cônjuge, companheiro ou parente até o 2º grau dessas pessoas, e que não será pago servidor público com recursos da parceria, salvo exceção legal.</li>
+        <li>Na atuação em rede, a OSC celebrante confere a regularidade das executantes, assina com cada uma um termo de atuação em rede e comunica a administração em até 60 dias da assinatura; a rescisão é comunicada em 15 dias. A celebrante responde pelos atos da rede.</li>
+      </ul>
+      <p class="fonte-bloco">Fonte: Manual MROSC, itens 6.1 a 6.8.1.</p>
+    </details>
+
+    <h3>O que não pode ser exigido</h3>
+    <ul class="leitura lista">
+      <li>Certificações ou títulos como CEBAS, OS ou OSCIP.</li>
+      <li>Título de utilidade pública: o federal foi revogado pela Lei nº 13.204/2015 e não pode ser requisito nem critério de seleção, ainda que concedido por estado, DF ou município.</li>
+      <li>Inscrição em conselho ou credenciamento setorial, salvo se previsto em norma da política pública setorial.</li>
+    </ul>
+    <p class="fonte-bloco">Fonte: Manual MROSC, item 6.9.</p>
+
+    <p class="leitura">Checklist interativo de preparação institucional: <a href="palestra-1-captacao.html#h-checklist">palestra 1</a>.</p>
+    <form class="painel interativo fixacao" id="fx-exigencias" data-correta="b" aria-labelledby="fx-exigencias-titulo" hidden>
+      <h3 class="fixacao-titulo" id="fx-exigencias-titulo">Pergunta de fixação</h3>
+      <fieldset>
+        <legend>Qual é o tempo mínimo de CNPJ para celebrar parceria na esfera federal?</legend>
+        <label class="opcao"><input type="radio" name="fx-exigencias" value="a"> 1 ano</label>
+        <label class="opcao"><input type="radio" name="fx-exigencias" value="b"> 3 anos</label>
+        <label class="opcao"><input type="radio" name="fx-exigencias" value="c"> 5 anos</label>
+      </fieldset>
+      <div class="acoes-fixacao">
+        <button type="submit" class="br-button primary small">Conferir</button>
+        <button type="reset" class="br-button secondary small">Tentar de novo</button>
+      </div>
+      <div class="resultado" aria-live="polite"></div>
+      <div class="explicacoes" hidden>
+        <p data-opcao="a">1 ano é o mínimo em municípios; em estados e no DF são 2 anos.</p>
+        <p data-opcao="b">Na esfera federal, o mínimo é de 3 anos de CNPJ, com situação cadastral ativa.</p>
+        <p data-opcao="c">5 anos de CNPJ é o mínimo exigido da OSC que atua em rede.</p>
+      </div>
+      <p class="fonte-bloco">Fonte: Manual MROSC, itens 6.1 a 6.8.</p>
+    </form>
+  </div>
+</section>
+
+<section class="secao" id="riscos-fases" aria-labelledby="h-riscos-fases">
+  <div class="envelope">
+    <h2 id="h-riscos-fases">Riscos e medidas preventivas por fase</h2>
+    <div class="tabela-rolagem" tabindex="0" role="region" aria-labelledby="cap-riscos-fases">
+      <table>
+        <caption id="cap-riscos-fases">Riscos em cada fase da parceria, consequência e prevenção</caption>
+        <thead><tr><th scope="col">Fase</th><th scope="col">Risco</th><th scope="col">Consequência</th><th scope="col">Como prevenir</th><th scope="col">Fonte (Manual MROSC)</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Seleção</th><td>Proposta sem os 4 itens mínimos</td><td>Eliminação</td><td>Conferir realidade e nexo, ações/metas/indicadores, prazos e valor global</td><td>Item 5.4</td></tr>
+          <tr><th scope="row">Seleção</th><td>Submissão não concluída ou recurso fora do prazo</td><td>Proposta não enviada; recurso não conhecido</td><td>Concluir a submissão; contar 5 dias corridos</td><td>Itens 5.2 e 4.12.3</td></tr>
+          <tr><th scope="row">Celebração</th><td>CNPJ com menos de 3 anos, estatuto incompleto, dirigente em situação vedada</td><td>Impede a celebração</td><td>Revisar os requisitos antes de concorrer</td><td>Itens 6, 6.1, 6.2 e 6.6</td></tr>
+          <tr><th scope="row">Celebração</th><td>Certidão vencida ou falha formal</td><td>15 dias para corrigir, sob pena de não celebração</td><td>Manter certidões em dia ou usar o CAUC</td><td>Itens 6 e 6.3</td></tr>
+          <tr><th scope="row">Execução</th><td>Recursos parados por 365 dias</td><td>Rescisão da parceria (exceção justificada se houver execução parcial)</td><td>Executar conforme o cronograma</td><td>Item 7.6</td></tr>
+          <tr><th scope="row">Execução</th><td>Irregularidade na aplicação, desvio de finalidade ou medida saneadora ignorada</td><td>Retenção de parcelas</td><td>Seguir o plano e atender às orientações</td><td>Item 7.4</td></tr>
+          <tr><th scope="row">Execução</th><td>Despesa com fato gerador anterior à vigência</td><td>Vedada (exceção: custo de elaboração da proposta)</td><td>Contratar só na vigência</td><td>Item 7.7.1</td></tr>
+          <tr><th scope="row">Execução</th><td>Remanejamentos sem autorização que somem mais de 10%</td><td>Notificação; pode levar a aprovação com ressalvas</td><td>Pedir apostilamento</td><td>Item 7.8.1</td></tr>
+          <tr><th scope="row">Monitoramento</th><td>Irregularidade ou inexecução parcial</td><td>Notificação para sanar, cumprir ou justificar em 30 dias; pode levar à devolução, à retenção ou à rescisão</td><td>Responder e ajustar o plano</td><td>Item 8.6</td></tr>
+          <tr><th scope="row">Prestação de contas</th><td>Saldo não devolvido em 30 dias</td><td>Tomada de contas especial</td><td>Devolver no prazo improrrogável</td><td>Item 9.4</td></tr>
+          <tr><th scope="row">Prestação de contas</th><td>Omissão no relatório anual</td><td>Notificação para apresentar em 15 dias; apuração de responsabilidade</td><td>Enviar em até 30 dias após cada exercício</td><td>Item 9.3</td></tr>
+          <tr><th scope="row">Prestação de contas</th><td>Metas não cumpridas sem justificativa</td><td>Rejeição; devolução ou ação compensatória</td><td>Registrar evidências e justificar</td><td>Itens 9.4 e 9.4.1</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>Sinais que o Manual aponta como indício de irregularidade ou inexecução</h3>
+    <details class="detalhe camada"><summary>Ver os nove sinais</summary>
+<ul class="leitura lista">
+      <li>Recursos não executados conforme o cronograma físico-financeiro.</li>
+      <li>Todo o desembolso transferido para a conta da própria OSC.</li>
+      <li>Falta ou insuficiência de informações sobre a execução.</li>
+      <li>Recursos não usados em 365 dias.</li>
+      <li>Pagamentos em desacordo com o plano.</li>
+      <li>Denúncias.</li>
+      <li>Pesquisa de satisfação negativa.</li>
+      <li>Má execução vista na visita técnica.</li>
+      <li>Auditoria de órgão de controle.</li>
+    </ul>
+    <p class="fonte-bloco">Fonte: Manual MROSC, item 8.6.</p>
+    </details>
+    <form class="painel interativo fixacao" id="fx-riscos-fases" data-correta="a" aria-labelledby="fx-riscos-fases-titulo" hidden>
+      <h3 class="fixacao-titulo" id="fx-riscos-fases-titulo">Pergunta de fixação</h3>
+      <fieldset>
+        <legend>O que pode acontecer se os recursos da parceria ficarem parados por 365 dias?</legend>
+        <label class="opcao"><input type="radio" name="fx-riscos-fases" value="a"> Rescisão da parceria</label>
+        <label class="opcao"><input type="radio" name="fx-riscos-fases" value="b"> Nada, porque o dinheiro está na conta específica</label>
+        <label class="opcao"><input type="radio" name="fx-riscos-fases" value="c"> Só uma advertência</label>
+      </fieldset>
+      <div class="acoes-fixacao">
+        <button type="submit" class="br-button primary small">Conferir</button>
+        <button type="reset" class="br-button secondary small">Tentar de novo</button>
+      </div>
+      <div class="resultado" aria-live="polite"></div>
+      <div class="explicacoes" hidden>
+        <p data-opcao="a">Recursos parados por 365 dias levam à rescisão, com exceção justificada se houver execução parcial.</p>
+        <p data-opcao="b">Estar na conta específica não basta: a execução segue o cronograma.</p>
+        <p data-opcao="c">A consequência prevista é a rescisão da parceria.</p>
+      </div>
+      <p class="fonte-bloco">Fonte: Manual MROSC, item 7.6.</p>
+    </form>
+  </div>
+</section>
+
+<section class="secao" id="execucao" aria-labelledby="h-execucao">
+  <div class="envelope">
+    <h2 id="h-execucao">Execução da parceria: dinheiro, compras e alterações</h2>
+    <ul class="leitura lista">
+      <li><strong>Natureza do recurso:</strong> o repasse não é receita própria nem pagamento por serviço. A OSC <strong>não emite nota fiscal</strong> sobre o recurso repassado nem recolhe imposto sobre esse valor. <small class="fonte">Fonte: Manual MROSC, item 7.4.</small></li>
+      <li><strong>Parcelas:</strong> seguem o cronograma de desembolso. Ajuste no plano não justifica, sozinho, reter parcela; a não utilização integral da parcela anterior não impede novo repasse. <small class="fonte">Fonte: Manual MROSC, item 7.4.</small></li>
+      <li><strong>Atraso do governo:</strong> com mais de 30 dias de atraso, a OSC pode suspender as atividades; com mais de 60, pode rescindir. Também pode pagar com recursos próprios e ser ressarcida depois. <small class="fonte">Fonte: Manual MROSC, item 7.5.</small></li>
+      <li><strong>Compras e contratações:</strong> métodos do setor privado. Se o preço real superar o previsto, a OSC demonstra a compatibilidade com o mercado. <small class="fonte">Fonte: Manual MROSC, item 7.7.</small></li>
+      <li><strong>Atuação em rede:</strong> se a plataforma não permitir que a executante execute direto, a celebrante transfere o valor e depois registra no Transferegov.br os beneficiários. <small class="fonte">Fonte: Manual MROSC, item 7.9.</small></li>
+    </ul>
+
+    <h3>Alterações na parceria</h3>
+    <ul class="numeros" aria-label="Números-chave das alterações e do atraso">
+      <li><span class="numero-valor">10%</span><span class="numero-legenda">do valor global: soma dos remanejamentos sem autorização prévia</span><small class="fonte">Manual MROSC, item 7.8.1.</small></li>
+      <li><span class="numero-valor">50%</span><span class="numero-legenda">do valor global: ampliação máxima por termo aditivo</span><small class="fonte">Manual MROSC, item 7.8.2.</small></li>
+      <li><span class="numero-valor">30 dias</span><span class="numero-legenda">de atraso do governo: a OSC pode suspender as atividades</span><small class="fonte">Manual MROSC, item 7.5.</small></li>
+    </ul>
+    <details class="detalhe camada"><summary>Ver apostilamento, remanejamento e termo aditivo</summary>
+<ul class="leitura lista">
+      <li><strong>Apostilamento:</strong> muda o plano de trabalho (uso de rendimentos, ajustes, remanejamento sem mudar o valor global). A administração responde em até 30 dias.</li>
+      <li><strong>Remanejamento sem autorização prévia:</strong> até 10% do valor global, somadas todas as vezes; a OSC informa depois.</li>
+      <li><strong>Termo aditivo:</strong> ampliação de até 50% do valor global, redução, prorrogação de vigência ou mudança no destino dos bens.</li>
+      <li>O objeto não pode ser alterado, salvo previsão legal.</li>
+    </ul>
+    <p class="fonte-bloco">Fonte: Manual MROSC, itens 7.8.1 e 7.8.2.</p>
+    </details>
+
+    <h3>Na execução e na prestação de contas</h3>
+    <ul class="riscos">
+      <li class="risco"><p><span class="rotulo-risco">Risco</span>Pagar fora das formas previstas</p><p><span class="rotulo-risco">Consequência</span><svg class="icone icone-alerta" aria-hidden="true"><use href="#i-alerta"/></svg>Irregularidade</p><p><span class="rotulo-risco">Como evitar</span>Pague pelo Transferegov.br (OBTV); conta própria da OSC só nas hipóteses do decreto, com justificativa; espécie só se prevista no plano, até R$ 5.000,00 por beneficiário, salvo ato do ministro; registre sempre o beneficiário final. <small class="fonte">Manual MROSC, 7.7.2.</small></p></li>
+      <li class="risco"><p><span class="rotulo-risco">Risco</span>Comprovante sem os dados exigidos</p><p><span class="rotulo-risco">Consequência</span><svg class="icone icone-alerta" aria-hidden="true"><use href="#i-alerta"/></svg>Questionamento na análise</p><p><span class="rotulo-risco">Como evitar</span>Exija nota ou recibo com data, valor, nome e CNPJ da OSC e CNPJ ou CPF do fornecedor. <small class="fonte">Manual MROSC, 7.7.3.</small></p></li>
+      <li class="risco"><p><span class="rotulo-risco">Risco</span>Não guardar documentos</p><p><span class="rotulo-risco">Consequência</span><svg class="icone icone-alerta" aria-hidden="true"><use href="#i-alerta"/></svg>Falta de prova na análise</p><p><span class="rotulo-risco">Como evitar</span>Guarde os originais por 10 anos. <small class="fonte">Manual MROSC, 7.7.3.</small></p></li>
+      <li class="risco"><p><span class="rotulo-risco">Risco</span>Omitir a transparência</p><p><span class="rotulo-risco">Consequência</span><svg class="icone icone-alerta" aria-hidden="true"><use href="#i-alerta"/></svg>Descumprimento de obrigação legal</p><p><span class="rotulo-risco">Como evitar</span>Divulgue as informações listadas em Transparência. <small class="fonte">Manual MROSC, 7.1.2.</small></p></li>
+      <li class="risco"><p><span class="rotulo-risco">Risco</span>Alterar a parceria sem formalizar</p><p><span class="rotulo-risco">Consequência</span><svg class="icone icone-alerta" aria-hidden="true"><use href="#i-alerta"/></svg>Irregularidade</p><p><span class="rotulo-risco">Como evitar</span>Use termo aditivo ou certidão de apostilamento, conforme o caso; nenhum dos dois pode mudar o objeto. <small class="fonte">Manual MROSC, 1.</small></p></li>
+    </ul>
+    <form class="painel interativo fixacao" id="fx-execucao" data-correta="b" aria-labelledby="fx-execucao-titulo" hidden>
+      <h3 class="fixacao-titulo" id="fx-execucao-titulo">Pergunta de fixação</h3>
+      <fieldset>
+        <legend>A OSC precisa emitir nota fiscal sobre o recurso repassado?</legend>
+        <label class="opcao"><input type="radio" name="fx-execucao" value="a"> Sim, como em qualquer serviço</label>
+        <label class="opcao"><input type="radio" name="fx-execucao" value="b"> Não</label>
+        <label class="opcao"><input type="radio" name="fx-execucao" value="c"> Só se houver contrapartida</label>
+      </fieldset>
+      <div class="acoes-fixacao">
+        <button type="submit" class="br-button primary small">Conferir</button>
+        <button type="reset" class="br-button secondary small">Tentar de novo</button>
+      </div>
+      <div class="resultado" aria-live="polite"></div>
+      <div class="explicacoes" hidden>
+        <p data-opcao="a">O repasse não é pagamento por serviço.</p>
+        <p data-opcao="b">O repasse não é receita própria nem pagamento por serviço: a OSC não emite nota fiscal sobre ele nem recolhe imposto sobre esse valor.</p>
+        <p data-opcao="c">A contrapartida não muda a natureza do repasse.</p>
+      </div>
+      <p class="fonte-bloco">Fonte: Manual MROSC, item 7.4.</p>
+    </form>
+  </div>
+</section>
+
+<section class="secao" id="monitoramento" aria-labelledby="h-monitoramento">
+  <div class="envelope">
+    <h2 id="h-monitoramento">Monitoramento e avaliação</h2>
+    <ul class="leitura lista">
+      <li>O monitoramento é contínuo, centrado no cumprimento do objeto, com <strong>caráter preventivo e saneador</strong>. A análise financeira é complementar e entra quando há indícios de irregularidade ou inexecução. <small class="fonte">Fonte: Manual MROSC, item 8.</small></li>
+      <li><strong>Visita técnica in loco:</strong> não é auditoria nem fiscalização. É combinada com a OSC, sem interromper as atividades, e gera relatório enviado à OSC. <small class="fonte">Fonte: Manual MROSC, item 8.1; Anexo II.</small></li>
+      <li><strong>Pesquisa de satisfação:</strong> deve ser feita em parcerias com vigência superior a 1 ano. A OSC pode opinar sobre o questionário. Se a administração não a fizer, a OSC apresenta outro documento sobre a satisfação do público, por exemplo uma declaração de entidade local ou uma manifestação de conselho. <small class="fonte">Fonte: Manual MROSC, item 8.2; Anexo III.</small></li>
+      <li><strong>Relatório técnico de monitoramento e avaliação:</strong> elaborado pelo gestor e homologado pela comissão. <small class="fonte">Fonte: Manual MROSC, itens 8.4 e 8.5; Anexos IV e V.</small></li>
+      <li><strong>Diante de irregularidade:</strong> notificação para, em 30 dias, sanar, cumprir ou justificar. Com contraditório e ampla defesa. <small class="fonte">Fonte: Manual MROSC, item 8.6.</small></li>
+    </ul>
+    <form class="painel interativo fixacao" id="fx-monitoramento" data-correta="b" aria-labelledby="fx-monitoramento-titulo" hidden>
+      <h3 class="fixacao-titulo" id="fx-monitoramento-titulo">Pergunta de fixação</h3>
+      <fieldset>
+        <legend>A visita técnica in loco é uma auditoria?</legend>
+        <label class="opcao"><input type="radio" name="fx-monitoramento" value="a"> Sim, é uma auditoria</label>
+        <label class="opcao"><input type="radio" name="fx-monitoramento" value="b"> Não: é combinada com a OSC e gera relatório enviado a ela</label>
+        <label class="opcao"><input type="radio" name="fx-monitoramento" value="c"> É uma fiscalização sem aviso</label>
+      </fieldset>
+      <div class="acoes-fixacao">
+        <button type="submit" class="br-button primary small">Conferir</button>
+        <button type="reset" class="br-button secondary small">Tentar de novo</button>
+      </div>
+      <div class="resultado" aria-live="polite"></div>
+      <div class="explicacoes" hidden>
+        <p data-opcao="a">A visita técnica não é auditoria nem fiscalização.</p>
+        <p data-opcao="b">A visita é combinada com a OSC, não interrompe as atividades e gera relatório enviado à OSC.</p>
+        <p data-opcao="c">A visita é combinada com a OSC.</p>
+      </div>
+      <p class="fonte-bloco">Fonte: Manual MROSC, item 8.1; Anexo II.</p>
+    </form>
+  </div>
+</section>
+
+<section class="secao" id="prestacao-contas" aria-labelledby="h-prestacao-contas">
+  <div class="envelope">
+    <h2 id="h-prestacao-contas">Prestação de contas</h2>
+    <ul class="numeros" aria-label="Números-chave da prestação de contas">
+      <li><span class="numero-valor">30 dias</span><span class="numero-legenda">do término da execução para o relatório final de execução do objeto</span><small class="fonte">Manual MROSC, item 9.4.</small></li>
+      <li><span class="numero-valor">60 dias</span><span class="numero-legenda">para o relatório financeiro, só se houver descumprimento de metas ou indício de irregularidade</span><small class="fonte">Manual MROSC, itens 9.2 e 9.4.</small></li>
+      <li><span class="numero-valor">150 dias</span><span class="numero-legenda">para a administração emitir o parecer técnico conclusivo, prorrogáveis</span><small class="fonte">Manual MROSC, item 9.4.</small></li>
+    </ul>
+    <details class="detalhe camada"><summary>Ver todas as etapas, regras e prazos</summary>
+<div class="tabela-rolagem" tabindex="0" role="region" aria-labelledby="cap-prestacao">
+      <table>
+        <caption id="cap-prestacao">Etapas, regras e prazos da prestação de contas</caption>
+        <thead><tr><th scope="col">Etapa</th><th scope="col">Regra</th><th scope="col">Fonte (Manual MROSC)</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Durante a execução</th><td>Registrar dados e informações no Transferegov.br</td><td>Item 9</td></tr>
+          <tr><th scope="row">Parcerias com mais de 12 meses</th><td>Relatório parcial de execução do objeto em até 30 dias após cada exercício (12 meses contados da primeira liberação). Omissão: 15 dias após notificação</td><td>Item 9.3</td></tr>
+          <tr><th scope="row">Final</th><td>Relatório final de execução do objeto em até 30 dias do término, prorrogável por 15 com pedido prévio; devolução do saldo em 30 dias improrrogáveis, sob pena de tomada de contas especial; reserva das verbas rescisórias em outra conta da OSC, com memória de cálculo</td><td>Item 9.4</td></tr>
+          <tr><th scope="row">Conteúdo do relatório</th><td>Alcance das metas, ações desenvolvidas, comprovação (listas de presença, fotos, vídeos), contrapartida; justificativa se meta não for cumprida. Dispensa o que já está na plataforma</td><td>Item 9.1; Anexo VI</td></tr>
+          <tr><th scope="row">Relatório financeiro</th><td>Só se houver descumprimento de metas ou indício de irregularidade: em até 60 dias, prorrogáveis por 15</td><td>Itens 9.2 e 9.4</td></tr>
+          <tr><th scope="row">Análise</th><td>Parecer técnico conclusivo em até 150 dias, prorrogáveis. Se o prazo passar sem análise, a OSC <strong>não fica impedida</strong> de participar de chamamentos e celebrar parcerias</td><td>Item 9.4; Anexo VII</td></tr>
+          <tr><th scope="row">Desfechos</th><td>Aprovação; aprovação com ressalvas (falha formal sem dano, ou irregularidade de pequeno vulto sem má-fé); rejeição (omissão, descumprimento injustificado, dano ao erário, desvio)</td><td>Item 9.4</td></tr>
+          <tr><th scope="row">Recurso</th><td>30 dias para recorrer; ou 45 dias, prorrogáveis por igual período, para sanar</td><td>Item 9.4.1</td></tr>
+          <tr><th scope="row">Rejeição</th><td>Devolver em 30 dias ou pedir <strong>ações compensatórias</strong> (sem dolo nem fraude; até a metade do prazo da parceria); sem ressarcimento: tomada de contas especial e registro na plataforma e no SIAFI. Débitos com IPCA e juros pela Selic</td><td>Itens 9.4.1, 9.4.1.1, 9.4.1.2 e 9.4.2</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </details>
+    <form class="painel interativo fixacao" id="fx-prestacao-contas" data-correta="b" aria-labelledby="fx-prestacao-contas-titulo" hidden>
+      <h3 class="fixacao-titulo" id="fx-prestacao-contas-titulo">Pergunta de fixação</h3>
+      <fieldset>
+        <legend>A análise passou de 150 dias sem parecer. A OSC fica impedida de celebrar novas parcerias?</legend>
+        <label class="opcao"><input type="radio" name="fx-prestacao-contas" value="a"> Sim, até sair o parecer</label>
+        <label class="opcao"><input type="radio" name="fx-prestacao-contas" value="b"> Não</label>
+        <label class="opcao"><input type="radio" name="fx-prestacao-contas" value="c"> Só se a parceria tiver mais de 12 meses</label>
+      </fieldset>
+      <div class="acoes-fixacao">
+        <button type="submit" class="br-button primary small">Conferir</button>
+        <button type="reset" class="br-button secondary small">Tentar de novo</button>
+      </div>
+      <div class="resultado" aria-live="polite"></div>
+      <div class="explicacoes" hidden>
+        <p data-opcao="a">O atraso da análise não impede a OSC.</p>
+        <p data-opcao="b">Se o prazo passar sem análise, a OSC não fica impedida de participar de chamamentos e celebrar parcerias.</p>
+        <p data-opcao="c">A duração da parceria não muda essa regra.</p>
+      </div>
+      <p class="fonte-bloco">Fonte: Manual MROSC, item 9.4.</p>
+    </form>
+  </div>
+</section>
+
+<section class="secao" id="transparencia" aria-labelledby="h-transparencia">
+  <div class="envelope">
+    <h2 id="h-transparencia">Transparência e gestão documental</h2>
+    <div class="tres-colunas">
+      <div>
+        <h3>O que publicar</h3>
+        <p>No sítio da OSC e em locais visíveis da sede e dos estabelecimentos:</p>
+        <ul class="lista">
+          <li>data de assinatura, identificação do instrumento e do órgão;</li>
+          <li>nome e CNPJ da OSC;</li>
+          <li>objeto, valor total e valores liberados;</li>
+          <li>situação da prestação de contas: datas prevista e de apresentação, prazo de análise e resultado;</li>
+          <li>remuneração da equipe paga com a parceria: valor total, funções e remuneração prevista;</li>
+          <li>estatuto atualizado, relação nominal dos dirigentes e cópia dos instrumentos, aditivos e relatórios finais de prestação de contas.</li>
+        </ul>
+      </div>
+      <div>
+        <h3><svg class="icone" aria-hidden="true"><use href="#i-relogio"/></svg> Por quanto tempo</h3>
+        <p>Da celebração até <strong>180 dias</strong> após a prestação de contas final. O Manual recomenda manter depois disso, porque ajuda a montar portfólio e comprovar experiência.</p>
+        <p><strong>Sem sítio próprio?</strong> A OSC pode usar a página dela no Mapa das OSC (Ipea), que pode servir como sítio oficial e currículo institucional.</p>
+      </div>
+      <div>
+        <h3><svg class="icone" aria-hidden="true"><use href="#i-documento"/></svg> O que guardar e onde registrar</h3>
+        <p>Documentos originais das despesas por <strong>10 anos</strong>.</p>
+        <p>Toda a execução de parceria federal é registrada no Transferegov.br, cujo uso é obrigatório, inclusive em dispensa, inexigibilidade e emenda.</p>
+      </div>
+    </div>
+    <p class="leitura"><strong>Emendas parlamentares:</strong> publicar também o nome do autor, a modalidade, os valores e onde foram aplicados. Os dados podem ser extraídos do painel gerencial do Transferegov, aba "Visão OSC", informando o CNPJ.</p>
+    <p class="fonte-bloco">Fonte: Manual MROSC, itens 1, 7.1.2, 7.1.3, 7.1.4, 7.3 e 7.7.3.</p>
+    <form class="painel interativo fixacao" id="fx-transparencia" data-correta="c" aria-labelledby="fx-transparencia-titulo" hidden>
+      <h3 class="fixacao-titulo" id="fx-transparencia-titulo">Pergunta de fixação</h3>
+      <fieldset>
+        <legend>Por quanto tempo a OSC guarda os documentos originais das despesas?</legend>
+        <label class="opcao"><input type="radio" name="fx-transparencia" value="a"> 180 dias</label>
+        <label class="opcao"><input type="radio" name="fx-transparencia" value="b"> 5 anos</label>
+        <label class="opcao"><input type="radio" name="fx-transparencia" value="c"> 10 anos</label>
+      </fieldset>
+      <div class="acoes-fixacao">
+        <button type="submit" class="br-button primary small">Conferir</button>
+        <button type="reset" class="br-button secondary small">Tentar de novo</button>
+      </div>
+      <div class="resultado" aria-live="polite"></div>
+      <div class="explicacoes" hidden>
+        <p data-opcao="a">180 dias é o prazo de divulgação depois da prestação de contas final.</p>
+        <p data-opcao="b">5 anos é o prazo de prescrição da ação punitiva.</p>
+        <p data-opcao="c">Os documentos originais das despesas são guardados por 10 anos.</p>
+      </div>
+      <p class="fonte-bloco">Fonte: Manual MROSC, itens 7.1.2 e 7.7.3; itens 9.5 a 9.5.7.</p>
+    </form>
+  </div>
+</section>
+
+<section class="secao" id="sancoes" aria-labelledby="h-sancoes">
+  <div class="envelope">
+    <h2 id="h-sancoes">Sanções</h2>
+    <p class="leitura">Execução em desacordo com o plano e as normas pode levar a termo de ajustamento de conduta ou às sanções:</p>
+    <ol class="sancoes">
+      <li><strong>Advertência</strong> para impropriedades sem gravidade para pena maior.</li>
+      <li><strong>Suspensão temporária</strong>: impede participar de chamamentos e celebrar parcerias ou contratos com a administração pública federal por até 2 anos.</li>
+      <li><strong>Declaração de inidoneidade</strong>: impede com todas as esferas de governo até a reabilitação, que exige ressarcimento e o decurso de 2 anos.</li>
+    </ol>
+    <p class="leitura">As sanções são registradas no Cepim (Portal da Transparência); suspensão e inidoneidade também inscrevem a OSC como inadimplente no SIAFI e no Transferegov.br. A ação punitiva prescreve em 5 anos. <small class="fonte">Fonte: Manual MROSC, itens 9.5 a 9.5.7 (Decreto nº 8.726/2016, art. 71, citado no Manual).</small></p>
+    <form class="painel interativo fixacao" id="fx-sancoes" data-correta="c" aria-labelledby="fx-sancoes-titulo" hidden>
+      <h3 class="fixacao-titulo" id="fx-sancoes-titulo">Pergunta de fixação</h3>
+      <fieldset>
+        <legend>Qual sanção impede a OSC de celebrar parcerias com todas as esferas de governo?</legend>
+        <label class="opcao"><input type="radio" name="fx-sancoes" value="a"> Advertência</label>
+        <label class="opcao"><input type="radio" name="fx-sancoes" value="b"> Suspensão temporária</label>
+        <label class="opcao"><input type="radio" name="fx-sancoes" value="c"> Declaração de inidoneidade</label>
+      </fieldset>
+      <div class="acoes-fixacao">
+        <button type="submit" class="br-button primary small">Conferir</button>
+        <button type="reset" class="br-button secondary small">Tentar de novo</button>
+      </div>
+      <div class="resultado" aria-live="polite"></div>
+      <div class="explicacoes" hidden>
+        <p data-opcao="a">A advertência é para impropriedades sem gravidade para pena maior.</p>
+        <p data-opcao="b">A suspensão impede com a administração pública federal, por até 2 anos.</p>
+        <p data-opcao="c">A inidoneidade impede com todas as esferas de governo até a reabilitação, que exige ressarcimento e o decurso de 2 anos.</p>
+      </div>
+      <p class="fonte-bloco">Fonte: Manual MROSC, itens 9.5 a 9.5.7.</p>
+    </form>
+  </div>
+</section>
+
+<section class="secao" id="estrategias" aria-labelledby="h-estrategias">
+  <div class="envelope">
+    <h2 id="h-estrategias">Estratégias para ampliar a captação</h2>
+    <ol class="estrategias">
+      <li><strong>Mantenha a documentação pronta o ano todo.</strong> Certidões, estatuto, ata, relação de dirigentes, comprovante de endereço: o prazo de 15 dias após a convocação é curto. <a href="#exigencias">Ver requisitos</a></li>
+      <li><strong>Documente cada parceria como prova de experiência.</strong> Relatórios, publicações e declarações de parceiros contam como comprovação. <a href="#exigencias">Ver experiência prévia</a></li>
+      <li><strong>Atualize a página da OSC no Mapa das OSC.</strong> A administração pode usá-la como fonte complementar de experiência e capacidade. <a href="#transparencia">Ver transparência</a></li>
+      <li><strong>Preveja o custo de elaboração da proposta.</strong> Até 5% do valor global, limitado a R$ 50.000,00, se a parceria for celebrada. <a href="palestra-1-captacao.html#custeio">Calcular o teto (palestra 1)</a></li>
+      <li><strong>Proponha temas por PMIS</strong> quando sua área não tem chamamento aberto. <a href="palestra-1-captacao.html#vias">Ver PMIS (palestra 1)</a></li>
+      <li><strong>Atue em rede.</strong> OSC com 5 anos ou mais de CNPJ pode celebrar com execução por OSCs parceiras, inclusive locais. <a href="#exigencias">Ver atuação em rede</a></li>
+      <li><strong>Escreva para os critérios.</strong> Inovação, territorialidade e sustentabilidade podem pontuar; simule a nota antes de enviar. <a href="palestra-1-captacao.html#edital">Ver critérios (palestra 1)</a></li>
+      <li><strong>Use os modelos oficiais.</strong> O Anexo I do Manual traz a estrutura de proposta e plano de trabalho. <a href="index.html#materiais">Ver materiais</a></li>
+    </ol>
+    <p class="fonte-bloco">Fonte: Manual MROSC, itens 4.12.2, 4.13, 5.2, 6, 6.4, 6.8, 6.11.6 e 7.1.2; Anexo I.</p>
+
+    <h3>Fatores críticos de sucesso</h3>
+    <details class="detalhe camada"><summary>Ver os cinco fatores</summary>
+<p class="leitura nota">Síntese das exigências do Manual feita para esta página, não citação.</p>
+    <ol class="estrategias">
+      <li><strong>Prontidão documental permanente.</strong> Os 15 dias da convocação não dão tempo de regularizar estatuto ou certidões. <small class="fonte">Manual MROSC, item 6.</small></li>
+      <li><strong>Proposta escrita para os critérios</strong> e com a cadeia problema → meta → indicador → meio de verificação. <small class="fonte">Manual MROSC, itens 4.12.2 e 5.4; Anexo I.</small></li>
+      <li><strong>Evidências coletadas durante a execução</strong>, porque a prestação de contas é pelo cumprimento do objeto. <small class="fonte">Manual MROSC, itens 8 e 9.1.</small></li>
+      <li><strong>Diálogo com o gestor:</strong> responder notificações e usar o apostilamento para ajustar o plano. <small class="fonte">Manual MROSC, itens 7.8.1 e 8.6.</small></li>
+      <li><strong>Transparência contínua</strong>, que também forma o portfólio de experiência. <small class="fonte">Manual MROSC, item 7.1.2.</small></li>
+    </ol>
+    </details>
+    <form class="painel interativo fixacao" id="fx-estrategias" data-correta="b" aria-labelledby="fx-estrategias-titulo" hidden>
+      <h3 class="fixacao-titulo" id="fx-estrategias-titulo">Pergunta de fixação</h3>
+      <fieldset>
+        <legend>Por que manter a documentação pronta o ano todo?</legend>
+        <label class="opcao"><input type="radio" name="fx-estrategias" value="a"> Porque os documentos vão junto com a proposta</label>
+        <label class="opcao"><input type="radio" name="fx-estrategias" value="b"> Porque o prazo depois da convocação é de 15 dias</label>
+        <label class="opcao"><input type="radio" name="fx-estrategias" value="c"> Porque o edital pode exigir título de utilidade pública</label>
+      </fieldset>
+      <div class="acoes-fixacao">
+        <button type="submit" class="br-button primary small">Conferir</button>
+        <button type="reset" class="br-button secondary small">Tentar de novo</button>
+      </div>
+      <div class="resultado" aria-live="polite"></div>
+      <div class="explicacoes" hidden>
+        <p data-opcao="a">Os documentos são pedidos depois da seleção, à OSC selecionada.</p>
+        <p data-opcao="b">Os 15 dias da convocação não dão tempo de regularizar estatuto ou certidões.</p>
+        <p data-opcao="c">Títulos e certificações não podem ser exigidos.</p>
+      </div>
+      <p class="fonte-bloco">Fonte: Manual MROSC, itens 6, 6.9 e 6.10.</p>
+    </form>
+  </div>
+</section>
+
+<section class="secao" id="checklists" aria-labelledby="h-checklists">
+  <div class="envelope">
+    <h2 id="h-checklists">Checklists</h2>
+    <p class="leitura">Marque o que já está feito. Nada do que você marcar é enviado ou guardado. Checklist de preparação institucional: <a href="palestra-1-captacao.html#h-checklist">palestra 1</a>.</p>
+    <noscript><p class="aviso">Os checklists interativos precisam de JavaScript. Use as tabelas de riscos e de prestação de contas como lista de conferência.</p></noscript>
+
+    <div class="duas-colunas-iguais">
+      <form class="painel interativo checklist" id="checklist-editais" aria-labelledby="h-ck-editais" hidden data-completo="Confira também as regras específicas do edital.">
+        <h3 id="h-ck-editais">Participação em editais</h3>
+        <fieldset>
+          <legend>Antes de enviar a proposta</legend>
+          <div class="br-checkbox"><input id="ck-e-edital" type="checkbox" data-secao="palestra-1-captacao.html#edital"><label for="ck-e-edital">Li objeto, valor de referência ou teto, critérios e pesos, prazos e condições de recurso do edital</label></div>
+          <div class="br-checkbox"><input id="ck-e-itens" type="checkbox" data-secao="palestra-1-captacao.html#proposta"><label for="ck-e-itens">A proposta traz realidade e nexo, ações, metas, indicadores, prazos e valor global</label></div>
+          <div class="br-checkbox"><input id="ck-e-indicador" type="checkbox" data-secao="palestra-1-captacao.html#proposta"><label for="ck-e-indicador">Cada resultado tem indicador, meta e meio de verificação</label></div>
+          <div class="br-checkbox"><input id="ck-e-teto" type="checkbox" data-secao="palestra-1-captacao.html#edital"><label for="ck-e-teto">O valor respeita o valor de referência ou teto</label></div>
+          <div class="br-checkbox"><input id="ck-e-nota" type="checkbox" data-secao="palestra-1-captacao.html#proposta"><label for="ck-e-nota">Simulei a nota pelos critérios de julgamento</label></div>
+          <div class="br-checkbox"><input id="ck-e-envio" type="checkbox" data-secao="#riscos-fases"><label for="ck-e-envio">Concluí a submissão formal no Transferegov.br antes do prazo</label></div>
+          <div class="br-checkbox"><input id="ck-e-recurso" type="checkbox" data-secao="#riscos-fases"><label for="ck-e-recurso">Sei a data do resultado preliminar e conto 5 dias corridos para recurso</label></div>
+        </fieldset>
+        <div class="resultado" aria-live="polite"></div>
+        <button type="reset" class="br-button secondary small">Desmarcar todos</button>
+        <p class="aviso"><small class="fonte">Fonte: Manual MROSC, itens 4.12, 4.12.2, 4.12.3, 5.2 e 5.4.</small></p>
+      </form>
+
+      <form class="painel interativo checklist" id="checklist-execucao" aria-labelledby="h-ck-execucao" hidden data-completo="Os pontos de controle da execução e da prestação de contas estão em dia. Confira também as cláusulas do seu termo.">
+        <h3 id="h-ck-execucao">Execução e prestação de contas</h3>
+        <fieldset>
+          <legend>Durante e ao fim da parceria</legend>
+          <div class="br-checkbox"><input id="ck-x-opp" type="checkbox" data-secao="#execucao"><label for="ck-x-opp">Pagamentos pela OBTV ou nas hipóteses admitidas, com beneficiário final registrado</label></div>
+          <div class="br-checkbox"><input id="ck-x-notas" type="checkbox" data-secao="#execucao"><label for="ck-x-notas">Notas e recibos com os dados exigidos; originais guardados por 10 anos</label></div>
+          <div class="br-checkbox"><input id="ck-x-transp" type="checkbox" data-secao="#transparencia"><label for="ck-x-transp">Transparência publicada desde a celebração</label></div>
+          <div class="br-checkbox"><input id="ck-x-remanej" type="checkbox" data-secao="#execucao"><label for="ck-x-remanej">Remanejamentos sem autorização prévia controlados até 10% do valor global</label></div>
+          <div class="br-checkbox"><input id="ck-x-365" type="checkbox" data-secao="#riscos-fases"><label for="ck-x-365">Nenhum recurso parado perto de 365 dias</label></div>
+          <div class="br-checkbox"><input id="ck-x-evid" type="checkbox" data-secao="#prestacao-contas"><label for="ck-x-evid">Evidências das metas (listas, fotos, vídeos) organizadas a cada atividade</label></div>
+          <div class="br-checkbox"><input id="ck-x-pesq" type="checkbox" data-secao="#monitoramento"><label for="ck-x-pesq">Pesquisa de satisfação prevista, se a vigência passar de 1 ano</label></div>
+          <div class="br-checkbox"><input id="ck-x-parcial" type="checkbox" data-secao="#prestacao-contas"><label for="ck-x-parcial">Relatório parcial em até 30 dias após cada exercício (parcerias com mais de 12 meses)</label></div>
+          <div class="br-checkbox"><input id="ck-x-final" type="checkbox" data-secao="#prestacao-contas"><label for="ck-x-final">Relatório final em até 30 dias do término e devolução do saldo em 30 dias</label></div>
+          <div class="br-checkbox"><input id="ck-x-rescis" type="checkbox" data-secao="#prestacao-contas"><label for="ck-x-rescis">Verbas rescisórias reservadas em outra conta, com memória de cálculo</label></div>
+        </fieldset>
+        <div class="resultado" aria-live="polite"></div>
+        <button type="reset" class="br-button secondary small">Desmarcar todos</button>
+        <p class="aviso"><small class="fonte">Fonte: Manual MROSC, itens 7.1.2, 7.6, 7.7.2, 7.7.3, 7.8.1, 8.2, 9.3 e 9.4.</small></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="secao" id="material-didatico" aria-labelledby="h-material">
+  <div class="envelope">
+    <h2 id="h-material">Material didático do painel</h2>
+    <p class="aviso-ia leitura"><svg class="icone" aria-hidden="true"><use href="#i-alerta"/></svg> Material de suporte da apresentação, produzido com uso de inteligência artificial (NotebookLM) a partir das fontes do caderno MROSC e revisado com errata. Não substitui o Manual MROSC, a Lei nº 13.019/2014, o Decreto nº 8.726/2016 nem o edital.</p>
+    <ul class="materiais">
+      <li><span class="selo-ia">Produzido com IA</span>
+        <p class="titulo-material" id="mat-p2-video-transferegov-oscs">Transferegov.br &amp; OSCs</p>
+        <span class="meta">Vídeo · 7:54 · versão editada: trechos com erro cortados e cartões de correção inseridos</span>
+        <video class="player" controls preload="none" aria-labelledby="mat-p2-video-transferegov-oscs">
+          <source src="materiais/palestra-2-desafios/videos/transferegov-e-oscs-editado.mp4" type="video/mp4">
+          <track kind="captions" src="data:text/vtt;base64,V0VCVlRUDQoNCjAwOjAwOjAwLjAwMCAtLT4gMDA6MDA6MDIuNDAwDQpCZW0tdmluZG9zIGEgZXN0ZSBndWlhIGV4cGxpY2F0aXZvLg0KDQowMDowMDowMi40MDAgLS0+IDAwOjAwOjA3LjgwMA0KSG9qZSwgYSBnZW50ZSB2YWkgZW50cmFyIGRlIGNhYmXDp2Egbm8gZWNvc3Npc3RlbWEgZG8gTVJPU0MgZSBkbyBUcmFuc2ZlcmVnb3YuYnIuDQoNCjAwOjAwOjA3LjgwMCAtLT4gMDA6MDA6MTEuNDAwDQpBc3N1bWluZG8gYXF1aSBhIHBvc3R1cmEgZGUgdW0gY29uc3VsdG9yIHTDqWNuaWNvIHJpZ29yb3NvLA0KDQowMDowMDoxMS40MDAgLS0+IDAwOjAwOjE2LjQwMA0KbyBub3NzbyBvYmpldGl2byDDqSB0cmFuc2Zvcm1hciBhcXVlbGUgbW9udGUgZGUgbWFudWFsLCBsZWdpc2xhw6fDtWVzIGUgZXhpZ8OqbmNpYXMNCg0KMDA6MDA6MTYuNDAwIC0tPiAwMDowMDoyMC45MDANCmVtIHVtIG1hcGEgZXN0cmF0w6lnaWNvIHJlYWwgZSBhcGxpY8OhdmVsIHBhcmEgYXMgb3JnYW5pemHDp8O1ZXMgZGEgc29jaWVkYWRlIGNpdmlsDQoNCjAwOjAwOjIwLjkwMCAtLT4gMDA6MDA6MjMuMjAwDQpjYXB0YXJlbSByZWN1cnNvcyBmZWRlcmFpcyBkZSB2ZXJkYWRlLg0KDQowMDowMDoyMy4yMDAgLS0+IDAwOjAwOjI1LjMwMA0KRW50w6NvLCB2YW1vcyBkaXJldG8gYW8gcG9udG8uDQoNCjAwOjAwOjI1LjMwMCAtLT4gMDA6MDA6MjkuMzAwDQpOb3NzYSBtYXN0ZXJjbGFzcyB0w6ljbmljYSBob2plIHBhc3NhIHBlbG8gcGFub3JhbWEgZG8gTVJPU0MsDQoNCjAwOjAwOjI5LjMwMCAtLT4gMDA6MDA6MzMuMzAwDQphcyBleGlnw6puY2lhcyBkZSBhY2Vzc28sIGNvbW8gZXN0cnV0dXJhciBwcm9wb3N0YXMgY29tcGV0aXRpdmFzLA0KDQowMDowMDozMy4zMDAgLS0+IDAwOjAwOjM3LjYwMA0KYSBleGVjdcOnw6NvIGZpbmFuY2VpcmEgZSwgcGFyYSBmZWNoYXIsIHJpc2NvcyBlIHByZXN0YcOnw6NvIGRlIGNvbnRhcy4NCg0KMDA6MDA6MzcuNjAwIC0tPiAwMDowMDozOC42MDANCkJvcmEgbMOhPw0KDQowMDowMDozOC42MDAgLS0+IDAwOjAwOjQzLjEwMA0KUGFub3JhbWEgTVJPU0MgZSBUcmFuc2ZlcmVnb3YuYnIuDQoNCjAwOjAwOjQzLjEwMCAtLT4gMDA6MDA6NDUuMTAwDQpWYW1vcyBlbnRlbmRlciBlc3NlIGVjb3NzaXN0ZW1hLg0KDQowMDowMDo0NS4xMDAgLS0+IDAwOjAwOjQ4LjYwMA0KOC42NzkuDQoNCjAwOjAwOjQ4LjYwMCAtLT4gMDA6MDA6NTMuOTAwDQpFc3NlIG7Dum1lcm8gZ2lnYW50ZSByZXByZXNlbnRhIGEgcXVhbnRpZGFkZSBkZSB0ZXJtb3MgZGUgY29sYWJvcmHDp8OjbyBlIGZvbWVudG8NCg0KMDA6MDA6NTMuOTAwIC0tPiAwMDowMDo1Ny4xMDANCmFzc2luYWRvcyBlbnRyZSAyMDE2IGUgMjAyNC4NCg0KMDA6MDA6NTcuNDAwIC0tPiAwMDowMTowMC44MDANCsOJIHVtIHZvbHVtZSBtYXNzaXZvIGRlIGRpbmhlaXJvIGUgb3BvcnR1bmlkYWRlLCBwZXNzb2FsLg0KDQowMDowMTowMC44MDAgLS0+IDAwOjAxOjA1LjQwMA0KQXMgT1NDIHTDqm0gdW0gcGFwZWwgYWJzb2x1dGFtZW50ZSB2aXRhbCBuYSBpbXBsZW1lbnRhw6fDo28gZGUgcG9sw610aWNhcyBww7pibGljYXMsDQoNCjAwOjAxOjA1LjQwMCAtLT4gMDA6MDE6MDguMTAwDQpjaGVnYW5kbyBvbmRlIG8gRXN0YWRvIG11aXRhcyB2ZXplcyBuw6NvIGNoZWdhLg0KDQowMDowMTowOC4xMDAgLS0+IDAwOjAxOjEwLjQwMA0KTWFzLCBwYXJhIGpvZ2FyIGVzc2Ugam9nbyBkZSBpZ3VhbCBwYXJhIGlndWFsLA0KDQowMDowMToxMC40MDAgLS0+IDAwOjAxOjEzLjcwMA0KZG9taW5hciBhcyByZWdyYXMgZG8gbWFudWFsIMOpIG9icmlnYXTDs3Jpby4NCg0KMDA6MDE6MTMuNzAwIC0tPiAwMDowMToxOC45MDANCsOJIGEgTGVpIDEzLjAxOSBkZSAyMDE0LCBvIGZhbW9zbyBNUk9TQy4NCg0KMDA6MDE6MTguOTAwIC0tPiAwMDowMToyMy4wMDANCkVsZSBjb25zb2xpZG91IHVtYSBwYXJjZXJpYSBtb2Rlcm5hIGVudHJlIG8gRXN0YWRvIGUgYSBzb2NpZWRhZGUgY2l2aWwuDQoNCjAwOjAxOjIzLjAwMCAtLT4gMDA6MDE6MjUuMzAwDQpTYWJlIHF1YWwgZm9pIGEgZ3JhbmRlIHZpcmFkYSBkZSBjaGF2ZSBhcXVpPw0KDQowMDowMToyNS40MDAgLS0+IDAwOjAxOjI5LjUwMA0KTyBNUk9TQyBjcmlvdSB1bSByZWdpbWUganVyw61kaWNvIG1haXMgc2VndXJvIGUgw6l0aWNvLA0KDQowMDowMToyOS41MDAgLS0+IDAwOjAxOjMzLjIwMA0Kb25kZSBvIGZvY28gc2FpdSBkYXF1ZWxhIGJ1cm9jcmFjaWEgYWJzdXJkYSBmb2NhZGEgZW0gcGFwZWxhZGENCg0KMDA6MDE6MzMuMjAwIC0tPiAwMDowMTozNS4zMDANCmUgcGFzc291IHBhcmEgbyBjb250cm9sZSBkZSByZXN1bHRhZG9zLg0KDQowMDowMTozNS4zMDAgLS0+IDAwOjAxOjM5LjgwMA0KTyBxdWUgaW1wb3J0YSBhZ29yYSDDqSBvIGltcGFjdG8gcmVhbCBnZXJhZG8gcGFyYSBxdWVtIG1haXMgcHJlY2lzYS4NCg0KMDA6MDE6MzkuODAwIC0tPiAwMDowMTo0Mi41MDANCkUgb25kZSB0b2RhIGVzc2EgZ2VzdMOjbyBhY29udGVjZSBuYSBwcsOhdGljYT8NCg0KMDA6MDE6NDIuNTAwIC0tPiAwMDowMTo0NC43MDANCk5vIFRyYW5zZmVyZWdvdi5ici4NCg0KMDA6MDE6NDQuNzAwIC0tPiAwMDowMTo0Ni4wMDANCkdlbnRlLCBuw6NvIHRlbSBjb21vIGZ1Z2lyLg0KDQowMDowMTo0Ni4wMDAgLS0+IDAwOjAxOjQ5LjcwMA0KRXNzZSDDqSBvIGNvcmHDp8OjbyBkaWdpdGFsIG7Do28gbmVnb2Npw6F2ZWwgZGUgdG9kbyBvIGVjb3NzaXN0ZW1hLg0KDQowMDowMTo0OS43MDAgLS0+IDAwOjAxOjUyLjUwMA0KRGVzZGUgbyBsYW7Dp2FtZW50byBkbyBlZGl0YWwsIHBhc3NhbmRvIHBlbGEgYXNzaW5hdHVyYSwNCg0KMDA6MDE6NTIuNjAwIC0tPiAwMDowMTo1Ni41MDANCmF0w6kgY2FkYSBtb3ZpbWVudGHDp8OjbyBmaW5hbmNlaXJhIGUgbyDDumx0aW1vIGNlbnRhdm8gZGEgcHJlc3Rhw6fDo28gZGUgY29udGFzLg0KDQowMDowMTo1Ni41MDAgLS0+IDAwOjAxOjU4LjMwMA0KVHVkbyB0ZW0gcXVlIGVzdGFyIHJlZ2lzdHJhZG8gbMOhLg0KDQowMDowMTo1OC4zMDAgLS0+IDAwOjAyOjAyLjQwMA0Kw4kgbGl0ZXJhbG1lbnRlIG8gZ3JhbmRlIG1vdG9yIGRlIHRyYW5zcGFyw6puY2lhIGRvIGdvdmVybm8gZmVkZXJhbC4NCg0KMDA6MDI6MDIuNDAwIC0tPiAwMDowMjowNC44MDANCkV4aWfDqm5jaWFzIHBhcmEgYWNlc3NvIGEgcmVjdXJzb3MuDQoNCjAwOjAyOjA0LjgwMCAtLT4gMDA6MDI6MDguMTAwDQpBcXVpIGEgZ2VudGUgZW50cmEgbmFzIHJlZ3JhcyByw61naWRhcyBkbyBqb2dvLg0KDQowMDowMjowOC4xMDAgLS0+IDAwOjAyOjA5LjYwMA0KTyBwb250byBjcnVjaWFsIGFxdWkgw6ksDQoNCjAwOjAyOjA5LjYwMCAtLT4gMDA6MDI6MTMuMzAwDQpkZSBuYWRhIGFkaWFudGEgdGVyIHVtYSBwcm9wb3N0YSB0w6ljbmljYSBwZXJmZWl0YW1lbnRlIHJlZGlnaWRhDQoNCjAwOjAyOjEzLjMwMCAtLT4gMDA6MDI6MTYuNjAwDQpzZSBhIGVzdHJ1dHVyYSBpbnN0aXR1Y2lvbmFsIGRhIG9yZ2FuaXphw6fDo28gYXByZXNlbnRhciBmYWxoYXMuDQoNCjAwOjAyOjE2LjYwMCAtLT4gMDA6MDI6MTguODAwDQpBIGNvbmZvcm1pZGFkZSB2ZW0gZW0gcHJpbWVpcm8gbHVnYXIuDQoNCjAwOjAyOjE4LjgwMCAtLT4gMDA6MDI6MjEuNTAwDQpFc3NlIGNoZWNrbGlzdCB2aXN1YWwgw6kgbyBxdWUgYXMgZXF1aXBlcyBhZG1pbmlzdHJhdGl2YXMNCg0KMDA6MDI6MjEuNTAwIC0tPiAwMDowMjoyNC45MDANCnByZWNpc2FtIHZlcmlmaWNhciBhbnRlcyBtZXNtbyBkZSBvbGhhciBwYXJhIHVtIGVkaXRhbC4NCg0KMDA6MDI6MjQuOTAwIC0tPiAwMDowMjoyOC41MDANCkEgZ2VudGUgZXN0w6EgZmFsYW5kbyBkZSBwYXJ0aWNpcGFyIGNvbSBvIENOUEogbWF0cml6IG91IGZpbGlhbCwNCg0KMDA6MDI6MjguNTAwIC0tPiAwMDowMjozMC41MDANCmNvbXByb3ZhciBvIHRlbXBvIG3DrW5pbW8gZGUgZXhpc3TDqm5jaWEsDQoNCjAwOjAyOjMwLjUwMCAtLT4gMDA6MDI6MzIuNjAwDQpnYXJhbnRpciBhdHJhdsOpcyBkZSBkZWNsYXJhw6fDtWVzIGZvcm1haXMNCg0KMDA6MDI6MzIuNjAwIC0tPiAwMDowMjozNS4wMDANCnF1ZSBvcyBkaXJpZ2VudGVzIG7Do28gdMOqbSBwcm9pYmnDp8O1ZXMgbGVnYWlzDQoNCjAwOjAyOjM1LjAwMCAtLT4gMDA6MDI6MzcuMjAwDQplLCBjbGFybywgcHJvdmFyIG8gZW5kZXJlw6dvIGRpcmVpdGluaG8uDQoNCjAwOjAyOjM3LjIwMCAtLT4gMDA6MDI6MzkuOTAwDQrDiSBvIGLDoXNpY28gcXVlIGdhcmFudGUgYSBxdWFsaWZpY2HDp8Ojby4NCg0KMDA6MDI6MzkuOTAwIC0tPiAwMDowMjo0MC44MDANClNvbWFkbyBhIGlzc28sDQoNCjAwOjAyOjQwLjgwMCAtLT4gMDA6MDI6NDQuMjAwDQp2ZW0gYSBwYXJ0ZSBwZXNhZGEgZGEgcmVndWxhcmlkYWRlIGZpc2NhbCBlIHRyYWJhbGhpc3RhLg0KDQowMDowMjo0NC4yMDAgLS0+IDAwOjAyOjQ2LjQwMA0KVGVtIHF1ZSBhcHJlc2VudGFyIGEgY2VydGlkw6NvIG5lZ2F0aXZhIHRyYWJhbGhpc3RhLA0KDQowMDowMjo0Ni41MDAgLS0+IDAwOjAyOjQ5LjIwMA0KbyBDTkRULCBvIGNlcnRpZmljYWRvIGRvIEZHVFMNCg0KMDA6MDI6NDkuMjAwIC0tPiAwMDowMjo1Mi41MDANCmUgYSBjZXJ0aWTDo28gZGUgdHJpYnV0b3MgZmVkZXJhaXMgZSBkw612aWRhIGF0aXZhLg0KDQowMDowMjo1Mi41MDAgLS0+IDAwOjAyOjU0LjgwMA0KVW0gYWxlcnRhIGdpZ2FudGUgcGFyYSBxdWVtIGVzdMOhIG5hIGdlc3TDo28uDQoNCjAwOjAyOjU0LjgwMCAtLT4gMDA6MDI6NTYuNzAwDQpVbWEgw7puaWNhIGNlcnRpZMOjbyB2ZW5jaWRhIG5vIHNpc3RlbWENCg0KMDA6MDI6NTYuNzAwIC0tPiAwMDowMjo1OS43MDANCnZpcmEgdW1hIGJhcnJlaXJhIGltZWRpYXRhIHBhcmEgYSBhc3NpbmF0dXJhIGRhIHBhcmNlcmlhLg0KDQowMDowMjo1OS43MDAgLS0+IDAwOjAzOjAxLjUwMA0KTyBjb21wbGlhbmNlIGUgYSBnZXN0w6NvIGRlIGRvY3VtZW50b3MNCg0KMDA6MDM6MDEuNTAwIC0tPiAwMDowMzowNC45MDANCnByZWNpc2FtIHNlciBtdWl0bywgbWFzIG11aXRvIHByb2F0aXZvcy4NCg0KMDA6MDM6MDQuOTAwIC0tPiAwMDowMzowOC43MDANClBhcnRlIDMuIEVsYWJvcmHDp8OjbyBkZSBwcm9wb3N0YXMgY29tcGV0aXRpdmFzLg0KDQowMDowMzowOC43MDAgLS0+IDAwOjAzOjExLjcwMA0KSG9yYSBkZSBjb25zdHJ1aXIgbyBub3NzbyBjYXNvIGRlIHN1Y2Vzc28uDQoNCjAwOjAzOjExLjcwMCAtLT4gMDA6MDM6MTUuNDAwDQpJc3NvIGlsdXN0cmEgYnJpbGhhbnRlbWVudGUgdW0gZG9zIG1haW9yZXMgZGVzYWZpb3MgdMOpY25pY29zLg0KDQowMDowMzoxNS40MDAgLS0+IDAwOjAzOjE4LjYwMA0KQSBjbGFzc2lmaWNhw6fDo28gY29ycmV0YSBkYXMgZGVzcGVzYXMgbm8gcGxhbm8gZGUgdHJhYmFsaG8uDQoNCjAwOjAzOjE4Ljg1MCAtLT4gMDA6MDM6MjIuODUwDQpDb3N0b3Mgb3BlcmFjaW9uYWlzIHPDo28gZXhjbHVzaXZhbWVudGUgYXF1ZWxlcyBsaWdhZG9zIGRlIGZvcm1hIGRpcmV0YQ0KDQowMDowMzoyMi44NTAgLS0+IDAwOjAzOjI1LjU1MA0Kw6BzIGHDp8O1ZXMgcXVlIGVudHJlZ2FtIG9zIHJlc3VsdGFkb3MgZG8gcHJvamV0by4NCg0KMDA6MDM6MjUuNTUwIC0tPiAwMDowMzoyOC4zNTANCkrDoSBvcyBjdXN0b3MgYWRtaW5pc3RyYXRpdm9zIHPDo28gb3MgaW5kaXJldG9zLA0KDQowMDowMzoyOC4zNTAgLS0+IDAwOjAzOjMwLjM1MA0KbmVjZXNzw6FyaW9zIHBhcmEgbWFudGVyIGEgcGFyY2VyaWEgcm9kYW5kbywNCg0KMDA6MDM6MzAuMzUwIC0tPiAwMDowMzozMy4wNTANCnRpcG8gYWx1Z3VlbCwgY29udGFkb3IsIGludGVybmV0Lg0KDQowMDowMzozMy4wNTAgLS0+IDAwOjAzOjM0Ljg1MA0KRMOhIHBhcmEgcGFnYXIgYSBlcXVpcGUgZGUgdHJhYmFsaG8/DQoNCjAwOjAzOjM0Ljg1MCAtLT4gMDA6MDM6MzYuOTUwDQpEw6Egc2ltLCBpbmNsdXNpdmUgZGlyaWdlbnRlcywNCg0KMDA6MDM6MzYuOTUwIC0tPiAwMDowMzozOS45NTANCm1hcyBzZW1wcmUgcHJvcG9yY2lvbmFsIGFvIHRlbnRvIGRlZGljYWRvIGFvIHByb2pldG8NCg0KMDA6MDM6MzkuOTUwIC0tPiAwMDowMzo0Mi4xNTANCmUgcmVzcGVpdGFuZG8gbyB0ZXRvIGRlIG1lcmNhZG8uDQoNCjAwOjAzOjQyLjE1MCAtLT4gMDA6MDM6NDUuODUwDQpPdXRybyBkZXRhbGhlIGVzdHJhdMOpZ2ljbyBkZSBwbGFuZWphbWVudG8gw6kgYSBjb250cmFwYXJ0aWRhLg0KDQowMDowMzo0NS44NTAgLS0+IDAwOjAzOjQ4LjI1MA0KTyBtYW51YWwgdHJheiB1bWEgZGlzdGluw6fDo28gbXVpdG8gbsOtdGlkYS4NCg0KMDA6MDM6NDguMjUwIC0tPiAwMDowMzo1Mi4xNTANCkEgY29udHJhcGFydGlkYSBvYnJpZ2F0w7NyaWEgc8OzIHBvZGUgc2VyIGV4aWdpZGEgcGVsYSBhZG1pbmlzdHJhw6fDo28NCg0KMDA6MDM6NTIuMTUwIC0tPiAwMDowMzo1NC43NTANCmVtIHBhcmNlcmlhcyBxdWUgc3VwZXJlbSAxIG1pbGjDo28gZGUgcmVhaXMNCg0KMDA6MDM6NTQuNzUwIC0tPiAwMDowMzo1Ny41NTANCmUgdGVtIHF1ZSBzZXIgZW0gYmVucyBvdSBzZXJ2acOnb3MgY29tIHZhbG9yIGNlcnRpbmhvLg0KDQowMDowMzo1Ny41NTAgLS0+IDAwOjAzOjU5Ljc1MA0KQWdvcmEsIGEgY29udHJhcGFydGlkYSB2b2x1bnTDoXJpYQ0KDQowMDowMzo1OS43NTAgLS0+IDAwOjA0OjAxLjY1MA0Kw6kgdW1hIG9mZXJ0YSBkYSBwcsOzcHJpYSBvcmdhbml6YcOnw6NvLg0KDQowMDowNDowMS42NTAgLS0+IDAwOjA0OjAzLjU1MA0KRSBwcmVzdGVtIGF0ZW7Dp8OjbyBuZXNzZSBkZXRhbGhlLg0KDQowMDowNDowMy41NTAgLS0+IDAwOjA0OjA2LjE1MA0KRWxhIG51bmNhIHBvZGUgc2VyIGV4aWdpZGEgcGFyYSBjZWxlYnJhciBhIHBhcmNlcmlhLA0KDQowMDowNDowNi4yNTAgLS0+IDAwOjA0OjA5Ljg1MA0KbmVtIHVzYWRhIGNvbW8gY3JpdMOpcmlvIHBhcmEgZGFyIG1haXMgcG9udG9zIG5hIGhvcmEgZGUganVsZ2FyIGFzIHByb3Bvc3Rhcy4NCg0KMDA6MDQ6MDkuODUwIC0tPiAwMDowNDoxNC42NTANCkFnb3JhLCB1bWEgaW5mb3JtYcOnw6NvIHN1cGVydmFsaW9zYSBxdWUgbXVpdGEgZ2VudGUgZGVpeGEgcGFzc2FyIG5hIG1lc2EuDQoNCjAwOjA0OjE0LjY1MCAtLT4gMDA6MDQ6MTguMTUwDQpFbGFib3JhciB1bWEgcHJvcG9zdGEgY29tcGxleGEgY3VzdGEgZGluaGVpcm8sIGNlcnRvPw0KDQowMDowNDoxOC4xNTAgLS0+IDAwOjA0OjIxLjY1MA0KU2FiaWEgcXVlIGEgbGVnaXNsYcOnw6NvIHBlcm1pdGUgcXVlIGFzIE9TQyBzZWxlY2lvbmFkYXMNCg0KMDA6MDQ6MjEuNjUwIC0tPiAwMDowNDoyNS4wNTANCnVzZW0gcmVjdXJzb3MgZGEgcHLDs3ByaWEgcGFyY2VyaWEgZGUgZm9ybWEgcmV0cm9hdGl2YQ0KDQowMDowNDoyNS4wNTAgLS0+IDAwOjA0OjI3LjA1MA0KcGFyYSBwYWdhciBlc3NlcyBjdXN0b3MgZGUgZWxhYm9yYcOnw6NvPw0KDQowMDowNDoyNy4wNTAgLS0+IDAwOjA0OjMwLjY1MA0KUG9pcyDDqSwgbyBsaW1pdGUgw6kgZGUgYXTDqSA1JSBkbyB2YWxvciBnbG9iYWwsDQoNCjAwOjA0OjMwLjY1MCAtLT4gMDA6MDQ6MzMuMzUwDQpyZXNwZWl0YW5kbyB1bSB0ZXRvIG3DoXhpbW8gZGUgNTAgbWlsIHJlYWlzLg0KDQowMDowNDozMy41NTAgLS0+IDAwOjA0OjM2LjU1MA0Kw4kgdW0gbWVjYW5pc21vIGV4Y2VsZW50ZSBkZSBzdXN0ZW50YWJpbGlkYWRlIGluc3RpdHVjaW9uYWwuDQoNCjAwOjA0OjQyLjU1MCAtLT4gMDA6MDQ6NDQuNDUwDQpQYXNzYXIgbm8gZWRpdGFsIMOpIMOzdGltbywgY2xhcm8sDQoNCjAwOjA0OjQ0LjQ1MCAtLT4gMDA6MDQ6NDguMzUwDQptYXMgYSBtYXR1cmlkYWRlIGRhIG9yZ2FuaXphw6fDo28gw6kgdGVzdGFkYSBtZXNtbyBuYSBleGVjdcOnw6NvLg0KDQowMDowNDo0OC4zNTAgLS0+IDAwOjA0OjUwLjE1MA0KQXNzaW0gcXVlIHNhaSBvIHJlc3VsdGFkbyBmaW5hbCwNCg0KMDA6MDQ6NTAuMTUwIC0tPiAwMDowNDo1My42NTANCmNvbWXDp2EgdW1hIGNvcnJpZGEgY29udHJhIG8gdGVtcG8sIGNvbSBwcmF6b3MgbXVpdG8gcsOtZ2lkb3MuDQoNCjAwOjA0OjUzLjY1MCAtLT4gMDA6MDQ6NTcuNTUwDQpBIE9TQyB0ZW0gdW1hIGphbmVsYSBzdXBlciBhcGVydGFkYSBkZSBhcGVuYXMgMTUgZGlhcyBjb3JyaWRvcw0KDQowMDowNDo1Ny41NTAgLS0+IDAwOjA0OjU5LjE1MA0KcGFyYSBhcHJlc2VudGFyIG8gcGxhbm8gZGUgdHJhYmFsaG8NCg0KMDA6MDQ6NTkuMTUwIC0tPiAwMDowNTowMi40NTANCmUgY29tcHJvdmFyIHRvZG9zIGFxdWVsZXMgcmVxdWlzaXRvcyBsZWdhaXMgZSBmaXNjYWlzLg0KDQowMDowNTowMi40NTAgLS0+IDAwOjA1OjA2LjQ1MA0KTyBnb3Zlcm5vIHPDsyBkw6EgMTUgZGlhcyBleHRyYXMgc2UgZW5jb250cmFyIGVycm9zIHB1cmFtZW50ZSBmb3JtYWlzDQoNCjAwOjA1OjA2LjQ1MCAtLT4gMDA6MDU6MDguNDUwDQpvdSBhbGd1bWEgY2VydGlkw6NvIHF1ZSBhY2Fib3UgZGUgZXhwaXJhci4NCg0KMDA6MDU6MDguNDUwIC0tPiAwMDowNToxMS40NTANCkVudMOjbywgYSBhbnRlY2lwYcOnw6NvIG7Do28gw6kgbHV4bywgw6kgc29icmV2aXbDqm5jaWEuDQoNCjAwOjA1OjEyLjQ1MCAtLT4gMDA6MDU6MTYuNDUwDQpFbnRyYW5kbyBuYSBnZXN0w6NvIGZpbmFuY2VpcmEgZG8gZGlhIGEgZGlhLCBhcyBhbWFycmFzIHPDo28gZm9ydGVzLg0KDQowMDowNToxNi40NTAgLS0+IDAwOjA1OjIwLjk1MA0KQSBtb3ZpbWVudGHDp8OjbyB0ZW0gcXVlIGFjb250ZWNlciB2aWEgb3JkZW0gZGUgcGFnYW1lbnRvIGRlIHBhcmNlcmlhLCBhIE9QUCwNCg0KMDA6MDU6MjAuOTUwIC0tPiAwMDowNToyMy40NTANCmzDoSBkZW50cm8gZG8gVHJhbnNmZXJlZ292LmJyLg0KDQowMDowNToyMy40NTAgLS0+IDAwOjA1OjI1LjQ1MA0KVHJhbnNmZXJpciBkaW5oZWlybyBkYSBjb250YSBkbyBwcm9qZXRvDQoNCjAwOjA1OjI1LjQ1MCAtLT4gMDA6MDU6MjcuNDUwDQpwYXJhIGEgY29udGEgcHJpdmFkYSBkYSBpbnN0aXR1acOnw6NvPw0KDQowMDowNToyNy40NTAgLS0+IDAwOjA1OjI4LjI1MA0KUXVhc2UgbnVuY2EuDQoNCjAwOjA1OjI4LjM3MCAtLT4gMDA6MDU6MzAuODcwDQplIHPDsyBwYXNzYSBjb20ganVzdGlmaWNhdGl2YXMgZXhjZXBjaW9uYWlzLA0KDQowMDowNTozMC44NzAgLS0+IDAwOjA1OjM0LjM3MA0KdGlwbyB1bSByZXNzYXJjaW1lbnRvIGRlIGF0cmFzbyBlIHBhZ2FtZW50b3MgZW0gZXNww6ljaWUuDQoNCjAwOjA1OjM0LjM3MCAtLT4gMDA6MDU6MzcuODcwDQpFeGlzdGUgdW0gdGV0byByZXN0cml0aXZvIGRlIFIkIDUgbWlsIHBvciBiZW5lZmljacOhcmlvLg0KDQowMDowNTozNy44NzAgLS0+IDAwOjA1OjQwLjM3MA0KVmFtb3Mgc2VndWlyIGVtIGZyZW50ZSBlIHZlciBjb21vIGlzc28gc2UgZGVzZW5yb2xhDQoNCjAwOjA1OjQwLjM3MCAtLT4gMDA6MDU6NDIuMzcwDQpubyBzaXN0ZW1hIGRlIHBlbmFsaWRhZGVzIGRvIGdvdmVybm8uDQoNCjAwOjA1OjQyLjM3MCAtLT4gMDA6MDU6NDUuMzcwDQpPIGZpbmFuY2lhbWVudG8gcG9kZSBwYXJhciBubyBtZWlvIHNlIGhvdXZlciBxdWVicmEgZGUgcmVncmFzLg0KDQowMDowNTo0NS4zNzAgLS0+IDAwOjA1OjQ3LjM3MA0KQSByZXRlbsOnw6NvIGRhcyBwYXJjZWxhcyBwZWxvIGdvdmVybm8gYWNvbnRlY2UNCg0KMDA6MDU6NDcuMzcwIC0tPiAwMDowNTo1MC44NzANCnNlIGVsZXMgYWNoYXJlbSBpcnJlZ3VsYXJpZGFkZXMgbm8gdXNvIGRvIGRpbmhlaXJvIHJlcGFzc2FkbyBhbnRlcywNCg0KMDA6MDU6NTAuODcwIC0tPiAwMDowNTo1My4zNzANCnNlIGhvdXZlciBkZXN2aW8gZGEgZmluYWxpZGFkZSBkbyBwcm9qZXRvDQoNCjAwOjA1OjUzLjM3MCAtLT4gMDA6MDU6NTUuMzcwDQpvdSBzZSBhIGluc3RpdHVpw6fDo28gc2ltcGxlc21lbnRlIGlnbm9yYXINCg0KMDA6MDU6NTUuMzcwIC0tPiAwMDowNTo1Ny44NzANCm5hcyBvcmllbnRhw6fDtWVzIGRlIGNvcnJlw6fDo28gZG9zIMOzcmfDo29zIGRlIGNvbnRyb2xlLg0KDQowMDowNTo1Ny44NzAgLS0+IDAwOjA2OjAwLjM3MA0KVHJhbnNwYXLDqm5jaWEgw6kgbyBxdWUgbWFudMOpbSBvIGRpbmhlaXJvIGZsdWluZG8uDQoNCjAwOjA2OjAwLjg3MCAtLT4gMDA6MDY6MDIuODcwDQpSaXNjb3MgZSBwcmVzdGHDp8OjbyBkZSBjb250YXMuDQoNCjAwOjA2OjAyLjg3MCAtLT4gMDA6MDY6MDUuMzcwDQpDb21vIGZ1bmNpb25hbSBvcyBtZWNhbmlzbW9zIGRlIGRlZmVzYT8NCg0KMDA6MDY6MDUuODcwIC0tPiAwMDowNjowNy44NzANCk1hcyBlIHNlIG8gcmFkYXIgZG8gbW9uaXRvcmFtZW50byBww7pibGljbw0KDQowMDowNjowNy44NzAgLS0+IDAwOjA2OjA5LjM3MA0KYXBpdGEgYWxndW0gcHJvYmxlbWE/DQoNCjAwOjA2OjA5LjM3MCAtLT4gMDA6MDY6MTAuMzcwDQpDYWxtYS4NCg0KMDA6MDY6MTAuMzcwIC0tPiAwMDowNjoxMi4zNzANCkEgY29uc3RpdHVpw6fDo28gZ2FyYW50ZSBvIGRpcmVpdG8gZGUgZGVmZXNhLg0KDQowMDowNjoxMi4zNzAgLS0+IDAwOjA2OjE0Ljg3MA0KU2UgaG91dmVyIGluZMOtY2lvcyBkZSBpbmV4ZWN1w6fDo28gcGFyY2lhbCwNCg0KMDA6MDY6MTQuODcwIC0tPiAwMDowNjoxNi44NzANCmEgb3JnYW5pemHDp8OjbyBuw6NvIMOpIHB1bmlkYSBkZSBjYXJhLg0KDQowMDowNjoxNi44NzAgLS0+IDAwOjA2OjE4Ljg3MA0KRWxhIHJlY2ViZSB1bWEgbm90aWZpY2HDp8OjbyBvZmljaWFsDQoNCjAwOjA2OjE4Ljg3MCAtLT4gMDA6MDY6MjEuODcwDQplIHRlbSBleGF0b3MgMzAgZGlhcyBwYXJhIHJlc3BvbmRlciBkZSB0csOqcyBmb3JtYXMuDQoNCjAwOjA2OjIxLjg3MCAtLT4gMDA6MDY6MjUuMzcwDQpQcmltZWlybywgYWdpciByw6FwaWRvIGUgc2FuYXIgYSBpcnJlZ3VsYXJpZGFkZS4NCg0KMDA6MDY6MjUuMzcwIC0tPiAwMDowNjoyOC4zNzANClNlZ3VuZG8sIGN1bXByaXIgYSBvYnJpZ2HDp8OjbyBxdWUgZXN0YXZhIHBlbmRlbnRlLg0KDQowMDowNjoyOC4zNzAgLS0+IDAwOjA2OjMxLjM3MA0KT3UgdGVyY2Vpcm8sIHByb3RvY29sYXIgdW1hIGp1c3RpZmljYXRpdmEgZm9ybWFsDQoNCjAwOjA2OjMxLjM3MCAtLT4gMDA6MDY6MzMuMzcwDQpwcm92YW5kbyBxdWUgZXJhIHRlY25pY2FtZW50ZSBpbXBvc3PDrXZlbA0KDQowMDowNjozMy4zNzAgLS0+IDAwOjA2OjM1LjM3MA0KY29ycmlnaXIgYSBzaXR1YcOnw6NvIG5hcXVlbGUgbW9tZW50by4NCg0KMDA6MDY6MzUuMzcwIC0tPiAwMDowNjozOC4zNzANCk8gaWRlYWwsIGNsYXJvLCDDqSBuw6NvIGRlaXhhciBjaGVnYXIgbmVzc2UgcG9udG8uDQoNCjAwOjA2OjM4LjUyMCAtLT4gMDA6MDY6NTEuMzIwDQpbQ29ycmXDp8OjbyBkYSByZXZpc8Ojb10gQXMgc2l0dWHDp8O1ZXMgYSBzZWd1aXIgc8OjbyBzaW5haXMgcXVlIGEgYWRtaW5pc3RyYcOnw6NvIHDDumJsaWNhIG9ic2VydmEgbm8gbW9uaXRvcmFtZW50byBlIGF2YWxpYcOnw6NvIGRhIHBhcmNlcmlhLiBBIHZpc2l0YSB0w6ljbmljYSBpbiBsb2NvIG7Do28gw6kgYXVkaXRvcmlhIG5lbSBmaXNjYWxpemHDp8Ojby4gRm9udGU6IE1hbnVhbCBNUk9TQywgaXRlbnMgOC4xIGUgOC42Lg0KDQowMDowNjo1MS4zNzAgLS0+IDAwOjA2OjUzLjM3MA0KUG9yIGV4ZW1wbG8sIG8gY3Jvbm9ncmFtYSBmw61zaWNvDQoNCjAwOjA2OjUzLjM3MCAtLT4gMDA6MDY6NTUuMzcwDQpubyBiYXRlciBjb20gbyBnYXN0byBmaW5hbmNlaXJvLA0KDQowMDowNjo1NS4zNzAgLS0+IDAwOjA2OjU5LjM3MA0KZGVpeGFyIGRpbmhlaXJvIHBhcmFkbyBuYSBjb250YSBwb3IgMzY1IGRpYXMgc2VtIHVzbywNCg0KMDA6MDY6NTkuMzcwIC0tPiAwMDowNzowMi44NzANCnJlY2ViZXIgbm90YXMgYmFpeGFzIG5hcyBwZXNxdWlzYXMgZGUgc2F0aXNmYcOnw6NvIGRvcyBiZW5lZmljacOhcmlvcywNCg0KMDA6MDc6MDIuODcwIC0tPiAwMDowNzowNS44NzANCm91LCBjbGFybywgZmlzY2FpcyBlbmNvbnRyYXJlbSBwcm9ibGVtYXMgc8Opcmlvcw0KDQowMDowNzowNS44NzAgLS0+IDAwOjA3OjA3Ljg3MA0KZHVyYW50ZSB2aXNpdGFzIHTDqWNuaWNhcyBubyBsb2NhbC4NCg0KMDA6MDc6MDcuODcwIC0tPiAwMDowNzowOS44NzANCk8gbW9uaXRvcmFtZW50byBpbnRlcm5vIGRhIE9TQw0KDQowMDowNzowOS44NzAgLS0+IDAwOjA3OjEyLjg3MA0KdGVtIHF1ZSBjYcOnYXIgZXNzYXMgZmFsaGFzIGFudGVzIGRhIGFkbWluaXN0cmHDp8OjbyBww7pibGljYS4NCg0KMDA6MDc6MTIuODcwIC0tPiAwMDowNzoxNi44NzANCkUgYSBnZW50ZSBlbmNlcnJhIG5vc3NhIGFuw6FsaXNlIGNvbSB1bSBxdWVzdGlvbmFtZW50byBlc3NlbmNpYWwuDQoNCjAwOjA3OjE2Ljg3MCAtLT4gMDA6MDc6MjAuODcwDQpBIGdvdmVybmFuw6dhIGludGVybmEgZGEgb3JnYW5pemHDp8OjbyBlc3TDoSwgZGUgZmF0bywgbWFkdXJhDQoNCjAwOjA3OjIwLjg3MCAtLT4gMDA6MDc6MjMuODcwDQplIHByZXBhcmFkYSBwYXJhIG8gbsOtdmVsIGFic3VyZG8gZGUgcmFzdHJlYWJpbGlkYWRlDQoNCjAwOjA3OjIzLjg3MCAtLT4gMDA6MDc6MjcuODcwDQplIHRyYW5zcGFyw6puY2lhIGRpZ2l0YWwgcXVlIG8gVHJhbnNmZXJlZ292LmJyIGV4aWdlPw0KDQowMDowNzoyNy44NzAgLS0+IDAwOjA3OjI5Ljg3MA0KQSB2b250YWRlIGRlIGNhdXNhciBpbXBhY3RvIHNvY2lhbA0KDQowMDowNzoyOS44NzAgLS0+IDAwOjA3OjMyLjg3MA0Kw6kgbyBjb21idXN0w612ZWwgcXVlIG5vcyBtb3ZlLCBjb20gY2VydGV6YS4NCg0KMDA6MDc6MzIuODcwIC0tPiAwMDowNzozNS44NzANCk1hcywgbm8gZmltIGRvIGRpYSwgZXN0cnV0dXJhciBhcyBiYXNlcyBpbnN0aXR1Y2lvbmFpcywNCg0KMDA6MDc6MzUuODcwIC0tPiAwMDowNzozNy44NzANCmRvbWluYXIgYXMgcmVncmFzIGRvIE1ST1NDDQoNCjAwOjA3OjM3Ljg3MCAtLT4gMDA6MDc6MzkuODcwDQplIGFwbGljYXIgcHJvY2Vzc29zIHJpZ29yb3NvcyBkZSBjb21wbGlhbmNlDQoNCjAwOjA3OjM5Ljg3MCAtLT4gMDA6MDc6NDIuODcwDQrDqSBvIHF1ZSB2ZXJkYWRlaXJhbWVudGUgdHJhbnNmb3JtYSBib2FzIGludGVuw6fDtWVzDQoNCjAwOjA3OjQyLjg3MCAtLT4gMDA6MDc6NDYuODcwDQplbSBwYXJjZXJpYXMgcmVhaXMsIGZpbmFuY2lhZGFzIGUgZGUgaW1wYWN0byBkdXJhZG91cm8uDQoNCjAwOjA3OjQ2Ljg3MCAtLT4gMDA6MDc6NTAuODcwDQpQZW5zZW0gbmlzc28gZSB1bSBleGNlbGVudGUgcGxhbmVqYW1lbnRvIGEgdG9kb3MgbsOzcy4NCg==" srclang="pt" label="Português" default>
+        </video>
+        <span class="meta"><a href="materiais/leitura/p2-video-transferegov-oscs-transcricao.html">Ler a transcrição</a></span>
+        <div class="errata">
+          <p><strong>Correções desta revisão:</strong></p>
+          <ul>
+            <li>Versão editada nesta revisão: retiradas duas afirmações sem fonte e inserido um cartão: as situações de alerta fazem parte do monitoramento da administração pública, que não é auditoria nem fiscalização (Manual MROSC, itens 8.1 e 8.6).</li>
+            <li>A distinção entre custos diretos e indiretos está no item 6.11.5 do Manual MROSC.</li>
+          </ul>
+        </div>
+      </li>
+      <li><span class="selo-ia">Produzido com IA</span>
+        <a href="materiais/palestra-2-desafios/apresentacoes/gestao-estrategica-mrosc-e-transferegov.pdf" id="mat-p2-apresentacao-gestao-estrategica">Gestão Estratégica MROSC e Transferegov.br</a>
+        <span class="meta">Apresentação em PDF</span>
+        <div class="errata">
+          <p><strong>Correções desta revisão:</strong></p>
+          <ul>
+            <li>Slide 6: a vedação de exigir certificações (CEBAS, OS, OSCIP) está no item 6.9 do Manual; a citação &quot;Art. 48, Decreto 8.726&quot; não se confirma.</li>
+            <li>Slide 7: certidão vencida não desclassifica de imediato: a OSC é notificada e tem 15 dias para regularizar (item 6).</li>
+            <li>Slide 9: o ressarcimento de custos rateados é feito por transferência à conta da própria OSC, uma das hipóteses do item 7.7.2.2.</li>
+            <li>Slide 14 (Perspectivas e Tendências): desconsiderar; traz previsões sem fonte.</li>
+          </ul>
+        </div>
+      </li>
+      <li><span class="selo-ia">Produzido com IA</span>
+        <a href="materiais/palestra-2-desafios/infograficos/guia-mrosc-e-transferegov.png" id="mat-p2-infografico-guia">Guia MROSC e Transferegov.br</a>
+        <span class="meta">Infográfico</span>
+        <div class="errata">
+          <p><strong>Correções desta revisão:</strong></p>
+          <ul>
+            <li>Onde se lê &quot;Taxa de Elaboração&quot;, leia-se custo de elaboração da proposta; a &quot;taxa de administração&quot; é vedada (item 6.11.7).</li>
+            <li>Grafia: &quot;CRF/F6TS&quot; é CRF/FGTS; &quot;aluquel&quot; é aluguel; &quot;assessorio&quot; é assessoria.</li>
+          </ul>
+        </div>
+      </li>
+      <li><span class="selo-ia">Produzido com IA</span>
+        <a href="materiais/leitura/p2-texto-prestacao-contas.html" id="mat-p2-texto-prestacao-contas">Prestação de Contas MROSC</a>
+        <span class="meta">Texto</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="secao cta-final" aria-labelledby="h-cta">
+  <div class="envelope">
+    <h2 id="h-cta">Próximos passos</h2>
+    <p class="leitura">Revise os riscos da fase em que sua organização está, use os checklists e consulte os documentos oficiais.</p>
+    <div class="acoes">
+      <a class="br-button primary" href="palestra-1-captacao.html">Voltar à palestra 1</a>
+      <a class="br-button secondary" href="index.html#materiais">Materiais oficiais</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="rodape">
+  <div class="envelope">
+    <img src="assets/identidade/transferegov-logo.png" alt="Transferegov.br" width="120" height="40">
+    <p>Material orientativo para uso em treinamento. Não substitui a Lei nº 13.019/2014, o Decreto nº 8.726/2016 nem o edital de cada chamamento.</p>
+    <p>Conteúdo elaborado com base no Manual MROSC (2025) e nas fontes listadas em <a href="index.html#materiais">Materiais oficiais</a>. Versão de 07/11/2026.</p>
+    <p>Central de Atendimento do Transferegov.br: 0800 978 9008.</p>
+  </div>
+</footer>
+
+<script src="js/parametros.js"></script>
+<script src="js/regras.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
