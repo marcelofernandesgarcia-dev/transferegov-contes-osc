@@ -32,7 +32,12 @@ try {
         }
       }
     }
-    $slides += [pscustomobject]@{ numero = $s.SlideIndex; imagem = "slide-$n.png"; largura = $Largura; altura = $altura; textos = $textos }
+    # Hyperlinks do slide (texto exibido e endereço), na ordem em que aparecem
+    $links = @()
+    foreach ($h in $s.Hyperlinks) {
+      if ($h.Address) { $links += [pscustomobject]@{ texto = ([string]$h.TextToDisplay).Trim(); endereco = [string]$h.Address } }
+    }
+    $slides += [pscustomobject]@{ numero = $s.SlideIndex; imagem = "slide-$n.png"; largura = $Largura; altura = $altura; textos = $textos; links = $links }
   }
   $p.Close()
   $json = ConvertTo-Json -InputObject $slides -Depth 5

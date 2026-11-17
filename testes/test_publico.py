@@ -72,6 +72,30 @@ class TestRegras(unittest.TestCase):
         self.assertEqual(arquivos_do_item({"arquivos": None}), [])
 
 
+class TestLinksDosSlides(unittest.TestCase):
+    def test_so_https_gov_br(self):
+        from montar_publico import link_permitido
+        self.assertTrue(link_permitido("https://portal.transferegov.sistema.gov.br/portal/home"))
+        self.assertTrue(link_permitido("https://www.gov.br/transferegov"))
+        self.assertFalse(link_permitido("http://www.gov.br/x"))
+        self.assertFalse(link_permitido("https://gov.br.exemplo.com/x"))
+        self.assertFalse(link_permitido("javascript:alert(1)"))
+        self.assertFalse(link_permitido(None))
+
+    def test_link_fora_da_regra_para_a_montagem(self):
+        from montar_publico import ErroMontagem, links_do_slide
+        with self.assertRaises(ErroMontagem):
+            links_do_slide({"numero": 1, "links": [{"texto": "x", "endereco": "https://exemplo.com"}]}, "teste")
+
+    def test_linha_vira_link_com_nova_aba(self):
+        from montar_publico import linha_html
+        h = linha_html("Manual <MROSC>", {"Manual <MROSC>": "https://www.gov.br/a?b=1&c=2"})
+        self.assertIn('href="https://www.gov.br/a?b=1&amp;c=2" target="_blank" rel="noopener"', h)
+        self.assertIn("Manual &lt;MROSC&gt;", h)
+        self.assertIn("(abre em nova aba)", h)
+        self.assertEqual(linha_html("texto comum", {}), "texto comum")
+
+
 class _Refs(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -168,9 +192,16 @@ class TestSite(unittest.TestCase):
             self.assertGreater(n, 0)
             self.assertEqual(len(re.findall(r'<li class="slide"', texto)), n)
             self.assertEqual(len(re.findall(r'alt="Slide \d+ de ' + str(n) + r': [^"]+"', texto)), n)
-            self.assertEqual(texto.count('<details class="texto-slide">'), n)
+            self.assertEqual(len(re.findall(r'<details class="texto-slide"( open)?>', texto)), n)
             self.assertIn('aria-live="polite"', texto)
             self.assertNotIn("[Nome]", texto)
+            ultimo = texto[texto.index(f'id="slide-{n}"'):]
+            self.assertGreaterEqual(ultimo.count('target="_blank" rel="noopener"'), 8, pagina)
+            self.assertIn("<details class=\"texto-slide\" open>", ultimo)
+
+    def test_secao_acessos_necessarios(self):
+        for pagina in ["index.html", "palestra-1-captacao.html", "palestra-2-desafios.html"]:
+            self.assertIn('id="acessos"', (DOCS / pagina).read_text(encoding="utf-8"), pagina)
 
 
 if __name__ == "__main__":

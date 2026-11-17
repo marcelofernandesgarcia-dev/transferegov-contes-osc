@@ -13,6 +13,7 @@ import re
 import shutil
 import sys
 from pathlib import Path
+from urllib.parse import urlparse
 
 RAIZ = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ / "scripts"))
@@ -135,6 +136,34 @@ def texto_do_slide(textos, total):
     return limpos
 
 
+def link_permitido(endereco):
+    """Só https e domínio gov.br, como na landing de origem."""
+    u = urlparse(endereco or "")
+    host = (u.hostname or "").lower()
+    return u.scheme == "https" and (host == "gov.br" or host.endswith(".gov.br"))
+
+
+def linha_html(linha, links):
+    """Linha do texto do slide; vira link externo se for o texto de um hyperlink do slide."""
+    texto = linha.strip()
+    endereco = links.get(texto)
+    if not endereco:
+        return html.escape(texto)
+    return (f'<a href="{html.escape(endereco, quote=True)}" target="_blank" rel="noopener">{html.escape(texto)}'
+            '<span class="sr-only"> (abre em nova aba)</span>'
+            '<svg class="icone" aria-hidden="true"><use href="#i-externo"/></svg></a>')
+
+
+def links_do_slide(s, onde):
+    links = {}
+    for l in s.get("links") or []:
+        if not link_permitido(l.get("endereco")):
+            raise ErroMontagem(f"{onde}, slide {s['numero']}: link fora de https/gov.br: {l.get('endereco')!r}")
+        if l.get("texto"):
+            links[l["texto"].strip()] = l["endereco"]
+    return links
+
+
 def pagina_slides(chave, slides):
     ap = APRESENTACOES[chave]
     total = len(slides)
@@ -144,8 +173,14 @@ def pagina_slides(chave, slides):
         titulo = textos[0] if textos else f"Slide {s['numero']}"
         if s["numero"] == 1 and len(textos) > 1:
             titulo = f"{textos[0]}: {textos[1]}"
+        links = links_do_slide(s, chave)
         paragrafos = "\n".join(
-            "<p>" + "<br>".join(html.escape(l) for l in t.split("\n") if l.strip()) + "</p>" for t in textos)
+            "<p>" + "<br>".join(linha_html(l, links) for l in t.split("\n") if l.strip()) + "</p>" for t in textos)
+        usados = sum(paragrafos.count(f'href="{html.escape(e, quote=True)}"') > 0 for e in links.values())
+        if usados != len(set(links.values())):
+            raise ErroMontagem(f"{chave}, slide {s['numero']}: link do .pptx sem texto correspondente no slide")
+        # Slide com links: o texto já vem aberto, para os links ficarem visíveis sob a imagem.
+        aberto = " open" if links else ""
         n = s["numero"]
         carregar = "eager" if n == 1 else "lazy"
         itens.append(f"""      <li class="slide" id="slide-{n}">
@@ -153,8 +188,8 @@ def pagina_slides(chave, slides):
           <img src="slides/{chave}/{s['imagem']}" width="{s['largura']}" height="{s['altura']}" loading="{carregar}" alt="Slide {n} de {total}: {html.escape(titulo, quote=True)}">
           <figcaption class="contador-slide">Slide {n} de {total}</figcaption>
         </figure>
-        <details class="texto-slide">
-          <summary>Texto do slide {n}</summary>
+        <details class="texto-slide"{aberto}>
+          <summary>{"Texto e links" if links else "Texto"} do slide {n}</summary>
           {paragrafos}
         </details>
       </li>""")
@@ -173,6 +208,9 @@ def pagina_slides(chave, slides):
 <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-externo" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+</svg>
 <nav class="atalhos" aria-label="Atalhos de acessibilidade">
   <a href="#conteudo">Ir para o conteúdo</a>
 </nav>

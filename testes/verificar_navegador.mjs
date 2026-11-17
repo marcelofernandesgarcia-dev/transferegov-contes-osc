@@ -47,11 +47,12 @@ for (const largura of larguras) {
 const ctx = await navegador.newContext({ viewport: { width: 1280, height: 900 } });
 const pg = await ctx.newPage();
 await pg.goto(BASE + 'slides-palestra.html', { waitUntil: 'load' });
+const TOTAL = Number(await pg.getAttribute('.apresentacao', 'data-total'));
 const visivel = () => pg.evaluate(() => [...document.querySelectorAll('.slide')].findIndex((s) => !s.hidden) + 1);
 const posicao = () => pg.textContent('.posicao-slide');
 const checar = (cond, msg) => { console.log((cond ? 'ok   ' : 'FALHA ') + msg); if (!cond) falhas.push(msg); };
 
-checar(await visivel() === 1 && (await posicao()) === 'Slide 1 de 17', 'abre no slide 1');
+checar(await visivel() === 1 && (await posicao()) === `Slide 1 de ${TOTAL}`, 'abre no slide 1');
 // Tab: atalho → título (link) → voltar → anterior → próximo
 const focos = [];
 let semContorno = [];
@@ -70,17 +71,21 @@ checar(focos.includes('Slide anterior') && focos.includes('Próximo slide'), 'bo
 checar(semContorno.length === 0, 'foco visível em todos os elementos percorridos' + (semContorno.length ? ': ' + semContorno.join(', ') : ''));
 await pg.focus('[data-ir="1"]');
 await pg.keyboard.press('Enter');
-checar(await visivel() === 2 && (await posicao()) === 'Slide 2 de 17', 'Enter no Próximo vai ao slide 2');
+checar(await visivel() === 2 && (await posicao()) === `Slide 2 de ${TOTAL}`, 'Enter no Próximo vai ao slide 2');
 await pg.keyboard.press('ArrowRight');
 checar(await visivel() === 3, 'seta direita vai ao slide 3');
 await pg.keyboard.press('ArrowLeft');
 checar(await visivel() === 2, 'seta esquerda volta ao slide 2');
 checar(pg.url().endsWith('#slide-2'), 'endereço #slide-2');
-await pg.goto(BASE + 'slides-palestra.html#slide-17', { waitUntil: 'load' });
-checar(await visivel() === 17, 'abre direto no #slide-17');
+await pg.goto(BASE + `slides-palestra.html#slide-${TOTAL}`, { waitUntil: 'load' });
+checar(await visivel() === TOTAL, 'abre direto no último slide pelo endereço');
 await pg.keyboard.press('ArrowRight');
-checar(await visivel() === 17, 'não passa do último');
+checar(await visivel() === TOTAL, 'não passa do último');
+const links = await pg.$$eval('.slide:not([hidden]) .texto-slide a', (as) => as.map((a) => [a.target, a.rel, a.textContent.includes('(abre em nova aba)'), a.href.startsWith('https://')]));
+checar(links.length > 0 && links.every(([t, r, aviso, https]) => t === '_blank' && r === 'noopener' && aviso && https), `último slide com ${links.length} links clicáveis, nova aba e aviso`);
+checar(await pg.isVisible('.slide:not([hidden]) .texto-slide a'), 'links do último slide visíveis sem abrir nada');
 checar(await pg.getAttribute('[data-ir="1"]', 'aria-disabled') === 'true', 'Próximo marcado como indisponível no último');
+await pg.keyboard.press('ArrowLeft');
 await pg.click('.slide:not([hidden]) summary');
 checar(await pg.isVisible('.slide:not([hidden]) .texto-slide p'), 'texto do slide abre');
 // Sem JavaScript: todos os slides em lista
