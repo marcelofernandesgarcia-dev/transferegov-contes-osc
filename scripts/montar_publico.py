@@ -214,6 +214,7 @@ def pagina_slides(chave, slides):
     ap = APRESENTACOES[chave]
     total = len(slides)
     itens = []
+    ja_citadas = set()  # o QR pequeno se repete em todos os slides: cita só na primeira vez
     for s in slides:
         textos = texto_do_slide(s["textos"], total)
         titulo = textos[0] if textos else f"Slide {s['numero']}"
@@ -223,7 +224,9 @@ def pagina_slides(chave, slides):
         textos = unir_textos_de_link(textos, s.get("links") or [])
         paragrafos = "\n".join(
             "<p>" + "<br>".join(linha_html(l, links) for l in t.split("\n") if l.strip()) + "</p>" for t in textos)
-        citadas = imagens_citadas(s.get("imagens") or [], links)
+        brutas = [a for a in (s.get("imagens") or []) if " ".join((a or "").split()) not in ja_citadas]
+        ja_citadas.update(" ".join((a or "").split()) for a in brutas)
+        citadas = imagens_citadas(brutas, links)
         if citadas:
             paragrafos += "\n" + "\n".join(f"<p>{html.escape(c)}</p>" for c in citadas)
         usados = sum(paragrafos.count(f'href="{html.escape(e, quote=True)}"') > 0 for e in links.values())
