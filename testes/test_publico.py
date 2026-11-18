@@ -224,6 +224,13 @@ class TestSite(unittest.TestCase):
             self.assertIn("QR code que leva ao site do material para os participantes (o mesmo endereço do link acima).", capa, pagina)
             self.assertNotIn("Mulher com celular", capa, pagina)
 
+    def test_painel_publico_sem_perguntas_ao_painel(self):
+        # Pedido do usuário (18/11/2026): o site usa a versão pública do painel, sem a tarja
+        # "Pergunta ao painel" e sem o slide de votação.
+        texto = (DOCS / "slides-painel.html").read_text(encoding="utf-8")
+        self.assertNotIn("Pergunta ao painel", texto)
+        self.assertNotRegex(texto.lower(), r"vota[çc][ãa]o|levant\w* a mão")
+
     def test_secao_acessos_necessarios(self):
         for pagina in ["index.html", "palestra-1-captacao.html", "palestra-2-desafios.html"]:
             self.assertIn('id="acessos"', (DOCS / pagina).read_text(encoding="utf-8"), pagina)

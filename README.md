@@ -16,8 +16,9 @@ Site estático de apoio a uma palestra e um painel sobre parcerias federais entr
    powershell -File scripts/renderizar_slides.ps1 -Arquivo "<fonte>/apresentacoes/palestra-captacao.pptx" -Saida gerado/slides/palestra
    ```
    ```bash
-   powershell -File scripts/renderizar_slides.ps1 -Arquivo "<fonte>/apresentacoes/painel-desafios.pptx" -Saida gerado/slides/painel
+   powershell -File scripts/renderizar_slides.ps1 -Arquivo "<fonte>/apresentacoes/publico/painel-desafios.pptx" -Saida gerado/slides/painel
    ```
+   O painel vem da versão pública (`apresentacoes/publico/painel-desafios.pptx`, sem a tarja "Pergunta ao painel" e sem o slide de votação); a palestra vem de `apresentacoes/palestra-captacao.pptx`.
 2. Montar `docs/` a partir da fonte (somente leitura):
    ```bash
    python -I scripts/montar_publico.py --origem "<pasta da landing de origem>"
