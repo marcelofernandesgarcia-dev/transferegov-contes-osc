@@ -37,7 +37,12 @@ try {
     foreach ($h in $s.Hyperlinks) {
       if ($h.Address) { $links += [pscustomobject]@{ texto = ([string]$h.TextToDisplay).Trim(); endereco = [string]$h.Address } }
     }
-    $slides += [pscustomobject]@{ numero = $s.SlideIndex; imagem = "slide-$n.png"; largura = $Largura; altura = $altura; textos = $textos; links = $links }
+    # Texto alternativo das imagens do slide (o montador decide quais citar)
+    $imagens = @()
+    foreach ($sh in $s.Shapes) {
+      if ($sh.Type -eq 13 -and $sh.AlternativeText) { $imagens += ([string]$sh.AlternativeText).Trim() }
+    }
+    $slides += [pscustomobject]@{ numero = $s.SlideIndex; imagem = "slide-$n.png"; largura = $Largura; altura = $altura; textos = $textos; links = $links; imagens = $imagens }
   }
   $p.Close()
   $json = ConvertTo-Json -InputObject $slides -Depth 5

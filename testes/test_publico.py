@@ -84,6 +84,14 @@ class TestLinksDosSlides(unittest.TestCase):
         self.assertTrue(link_permitido("https://marcelofernandesgarcia-dev.github.io/transferegov-contes-osc/"))
         self.assertFalse(link_permitido("https://marcelofernandesgarcia-dev.github.io/outro-repo/"))
 
+    def test_imagens_citadas_so_qr_code(self):
+        from montar_publico import imagens_citadas
+        site = "https://exemplo.gov.br/x/"
+        self.assertEqual(imagens_citadas(["Foto decorativa", "QR code que leva ao site: " + site], {"site": site}),
+                         ["QR code que leva ao site (o mesmo endereço do link acima)."])
+        self.assertEqual(imagens_citadas(["QR code do edital"], {}), ["QR code do edital"])
+        self.assertEqual(imagens_citadas([None, ""], {}), [])
+
     def test_link_quebrado_em_linhas_vira_uma_linha(self):
         from montar_publico import juntar_quebra, unir_textos_de_link
         self.assertEqual(juntar_quebra("site.github.io\r/repo/"), "site.github.io/repo/")
@@ -213,6 +221,8 @@ class TestSite(unittest.TestCase):
             texto = (DOCS / pagina).read_text(encoding="utf-8")
             capa = texto[texto.index('id="slide-1"'):texto.index('id="slide-2"')]
             self.assertIn('href="https://marcelofernandesgarcia-dev.github.io/transferegov-contes-osc/" target="_blank" rel="noopener"', capa, pagina)
+            self.assertIn("QR code que leva ao site do material para os participantes (o mesmo endereço do link acima).", capa, pagina)
+            self.assertNotIn("Mulher com celular", capa, pagina)
 
     def test_secao_acessos_necessarios(self):
         for pagina in ["index.html", "palestra-1-captacao.html", "palestra-2-desafios.html"]:

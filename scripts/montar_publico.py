@@ -190,6 +190,26 @@ def unir_textos_de_link(textos, links_brutos):
     return saida
 
 
+# Só o texto alternativo das imagens que carregam informação entra no texto do slide.
+# Fotos e logotipos decorativos ficam de fora (o texto alternativo deles no .pptx não foi revisado).
+PREFIXOS_IMAGEM_CITADA = ("QR code",)
+
+
+def imagens_citadas(alts, links):
+    """Texto alternativo a citar; se terminar no endereço de um link do slide, remete ao link."""
+    saida = []
+    for alt in alts:
+        alt = " ".join((alt or "").split())
+        if not alt.startswith(PREFIXOS_IMAGEM_CITADA):
+            continue
+        for endereco in set(links.values()):
+            if alt.endswith(endereco):
+                alt = alt[: -len(endereco)].rstrip(" :") + " (o mesmo endereço do link acima)."
+                break
+        saida.append(alt)
+    return saida
+
+
 def pagina_slides(chave, slides):
     ap = APRESENTACOES[chave]
     total = len(slides)
@@ -203,6 +223,9 @@ def pagina_slides(chave, slides):
         textos = unir_textos_de_link(textos, s.get("links") or [])
         paragrafos = "\n".join(
             "<p>" + "<br>".join(linha_html(l, links) for l in t.split("\n") if l.strip()) + "</p>" for t in textos)
+        citadas = imagens_citadas(s.get("imagens") or [], links)
+        if citadas:
+            paragrafos += "\n" + "\n".join(f"<p>{html.escape(c)}</p>" for c in citadas)
         usados = sum(paragrafos.count(f'href="{html.escape(e, quote=True)}"') > 0 for e in links.values())
         if usados != len(set(links.values())):
             raise ErroMontagem(f"{chave}, slide {s['numero']}: link do .pptx sem texto correspondente no slide")
